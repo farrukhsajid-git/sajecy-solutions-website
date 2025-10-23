@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Terms of Service for Sajecy Solutions - Legal terms and conditions governing the use of our IT infrastructure and solutions services.">
+    <title>Terms of Service | Sajecy Solutions</title>
+
+    <!-- Preconnect to Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="../../css/balanced-design-system.css">
+    <link rel="stylesheet" href="../../css/balanced-homepage.css">
+
+    <!-- Logo Integration Styles -->
+    <style>
+        /* Logo Integration Styles - Test Implementation */
+        .nav-logo a {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 12px;
+            text-decoration: none;
+        }
+
+        .nav-logo-image {
+            width: 40px;
+            height: 40px;
+            flex-shrink: 0;
+            transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .nav-logo a:hover .nav-logo-image {
+            transform: scale(1.05) rotate(2deg);
+        }
+
+        .nav-logo-text-wrapper {
+            display: flex;
+            flex-direction: column;
+            line-height: 1.1;
+        }
+
+        .logo-text {
+            font-size: 24px;
+            font-weight: 900;
+            color: white;
+            letter-spacing: -0.02em;
+            margin: 0;
+        }
+
+        .logo-tagline {
+            font-size: 11px;
+            font-weight: 500;
+            color: rgba(255, 255, 255, 0.7);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin: 0;
+        }
+
+        /* Mobile adjustments */
+        @media (max-width: 639px) {
+            .nav-logo-image {
+                width: 36px;
+                height: 36px;
+            }
+
+            .logo-text {
+                font-size: 20px;
+            }
+
+            .logo-tagline {
+                font-size: 10px;
+            }
+        }
+
+        /* Desktop enhancement */
+        @media (min-width: 1024px) {
+            .nav-logo-image {
+                width: 44px;
+                height: 44px;
+            }
+
+            .logo-text {
+                font-size: 26px;
+            }
+
+            .logo-tagline {
+                font-size: 12px;
+            }
+        }
+
+        /* Accessibility: Focus state */
+        .nav-logo a:focus {
+            outline: 3px solid var(--primary-bright);
+            outline-offset: 4px;
+            border-radius: 8px;
+        }
+
+        /* Loading state optimization */
+        .nav-logo-image {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 4px;
+        }
+
+        /* Legal Content Styles */
+        .legal-content {
+            line-height: 1.8;
+            color: #1a202c;
+        }
+
+        .legal-content h2 {
+            margin-top: 3rem;
+            margin-bottom: 1.5rem;
+            font-size: 2rem;
+            font-weight: 700;
+            color: #1a202c;
+        }
+
+        .legal-content h3 {
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #1a202c;
+        }
+
+        .legal-content p {
+            margin-bottom: 1.25rem;
+            color: #1a202c;
+        }
+
+        .legal-content ul, .legal-content ol {
+            margin-bottom: 1.5rem;
+            padding-left: 2rem;
+            color: #1a202c;
+        }
+
+        .legal-content li {
+            margin-bottom: 0.75rem;
+            color: #1a202c;
+        }
+
+        .legal-content strong {
+            color: #1a202c;
+            font-weight: 600;
+        }
+
+        .info-box {
+            background: rgba(37, 99, 235, 0.05);
+            border-left: 4px solid var(--primary-blue);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 4px;
+        }
+
+        .info-box p:last-child {
+            margin-bottom: 0;
+        }
+
+        .warning-box {
+            background: rgba(239, 68, 68, 0.05);
+            border-left: 4px solid #ef4444;
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 4px;
+        }
+
+        .warning-box p:last-child {
+            margin-bottom: 0;
+        }
+
+        .contact-box {
+            background: var(--surface-secondary);
+            padding: 2rem;
+            border-radius: 8px;
+            margin-top: 3rem;
+        }
+
+        .contact-box h3 {
+            margin-top: 0;
+            color: var(--primary-blue);
+        }
+    </style>
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Navigation -->
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
+        <div class="nav-wrapper">
+            <div class="nav-logo">
+                <a href="../../index.html" aria-label="Sajecy Solutions Home">
+                    <!-- Logo Image -->
+                    <img
+                        src="../../images/sajecy-logo.png"
+                        alt="Sajecy Solutions Logo"
+                        class="nav-logo-image"
+                        width="44"
+                        height="44"
+                    >
+                    <!-- Logo Text -->
+                    <div class="nav-logo-text-wrapper">
+                        <span class="logo-text">Sajecy</span>
+                        <span class="logo-tagline">Solutions</span>
+                    </div>
+                </a>
+            </div>
+
+            <ul class="nav-menu" id="navMenu">
+                <li class="nav-item dropdown">
+                    <button class="nav-link dropdown-toggle" aria-expanded="false">
+                        Services
+                        <svg class="arrow-icon" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                            <path d="M3 4.5L6 7.5L9 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                        </svg>
+                    </button>
+                    <div class="dropdown-menu">
+                        <div class="dropdown-grid">
+                            <div class="dropdown-column">
+                                <h4 class="dropdown-heading">Infrastructure Services</h4>
+                                <a href="../services.html#datacenter">Data Center Services</a>
+                                <a href="../services/network-management.html">Network Management</a>
+                            </div>
+                            <div class="dropdown-column">
+                                <h4 class="dropdown-heading">Modern IT Solutions</h4>
+                                <a href="../services/cloud-hybrid.html">Cloud & Hybrid IT</a>
+                                <a href="../services/cybersecurity.html">Cybersecurity</a>
+                                <a href="../services/ai-automation.html">AI & Automation</a>
+                            </div>
+                            <div class="dropdown-column">
+                                <h4 class="dropdown-heading">Operations</h4>
+                                <a href="../services/service-desk.html">Managed Services</a>
+                                <a href="../services/it-asset-management.html">Asset Management</a>
+                                <a href="../services.html">View All Services</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a href="../why-sajecy.html" class="nav-link">Why Sajecy</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">Company</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../resources.html" class="nav-link">Resources</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <button class="nav-link dropdown-toggle" aria-expanded="false">
+                        Partnerships
+                        <svg class="arrow-icon" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                            <path d="M3 4.5L6 7.5L9 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                        </svg>
+                    </button>
+                    <div class="dropdown-menu">
+                        <div class="dropdown-grid">
+                            <div class="dropdown-column">
+                                <h4 class="dropdown-heading">Partner With Us</h4>
+                                <a href="../partnerships.html#technology">Technology Partners</a>
+                                <a href="../partnerships.html#channel">Channel Partners</a>
+                                <a href="../partnerships.html#strategic">Strategic Alliances</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a href="../careers.html" class="nav-link">Careers</a>
+                </li>
+            </ul>
+
+            <a href="contact.html" class="btn btn-primary nav-cta">
+                Contact Us
+            </a>
+
+            <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <main id="main-content">
+
+        <!-- Hero Section -->
+        <section class="hero-slider" style="min-height: 60vh; padding-bottom: 4rem;">
+            <div class="hero-slide hero-slide-1 active">
+                <div class="hero-content">
+                    <span class="badge" style="margin-bottom: var(--space-4);">Legal</span>
+                    <h1>Terms of Service</h1>
+                    <p>Last Updated: July 15, 2021</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Content Section -->
+        <section class="services-section" style="background: #bfdbfe;">
+            <div class="container">
+                <div style="max-width: 800px; margin: 0 auto; color: #1a202c;" class="legal-content">
+
+                    <div class="info-box">
+                        <p><strong>Agreement to Terms</strong></p>
+                        <p>These Terms of Service ("Terms") constitute a legally binding agreement between you (the "Client" or "you") and Sajecy Solutions ("Company," "we," "us," or "our") governing your use of our IT infrastructure and solutions services. By accessing our website or engaging our services, you agree to be bound by these Terms.</p>
+                    </div>
+
+                    <h2>1. Acceptance of Terms</h2>
+
+                    <h3>1.1 Agreement Formation</h3>
+                    <p>By accessing our website, requesting information, or engaging our services, you acknowledge that you have read, understood, and agree to be bound by these Terms and our Privacy Policy. If you do not agree to these Terms, you must not use our services.</p>
+
+                    <h3>1.2 Modifications to Terms</h3>
+                    <p>We reserve the right to modify these Terms at any time. We will notify you of material changes via:</p>
+                    <ul>
+                        <li>Email notification to registered users</li>
+                        <li>Prominent notice on our website</li>
+                        <li>Updated "Last Modified" date at the top of this document</li>
+                    </ul>
+                    <p>Continued use of our services after notification constitutes acceptance of the modified Terms.</p>
+
+                    <h3>1.3 Additional Terms</h3>
+                    <p>Specific services may be subject to additional terms, service level agreements (SLAs), or contracts. In case of conflict between these general Terms and service-specific agreements, the service-specific terms shall prevail.</p>
+
+                    <h2>2. Services Description</h2>
+
+                    <h3>2.1 IT Infrastructure and Solutions</h3>
+                    <p>Sajecy Solutions provides comprehensive IT infrastructure and solutions services, including but not limited to:</p>
+                    <ul>
+                        <li><strong>Data Center Services:</strong> Colocation, rack management, power and cooling, physical security</li>
+                        <li><strong>Network Management:</strong> Network design, implementation, monitoring, and optimization</li>
+                        <li><strong>Cloud & Hybrid IT:</strong> Cloud migration, hybrid infrastructure, multi-cloud management</li>
+                        <li><strong>Cybersecurity:</strong> Security assessments, threat monitoring, incident response, compliance</li>
+                        <li><strong>AI & Automation:</strong> Intelligent infrastructure management and process automation</li>
+                        <li><strong>Managed Services:</strong> 24/7 monitoring, help desk, technical support, maintenance</li>
+                        <li><strong>IT Asset Management:</strong> Hardware lifecycle, inventory tracking, disposal services</li>
+                    </ul>
+
+                    <h3>2.2 Service Customization</h3>
+                    <p>Services are tailored to client requirements through formal agreements, statements of work (SOW), or service orders. Specific deliverables, timelines, and pricing are defined in individual contracts.</p>
+
+                    <h3>2.3 Service Availability</h3>
+                    <p>While we strive for continuous service availability, certain services may require scheduled maintenance. We will provide advance notice of planned downtime when reasonably possible.</p>
+
+                    <h2>3. User Accounts and Registration</h2>
+
+                    <h3>3.1 Account Creation</h3>
+                    <p>Access to certain services requires account registration. You agree to:</p>
+                    <ul>
+                        <li>Provide accurate, current, and complete information</li>
+                        <li>Maintain and update your information as needed</li>
+                        <li>Maintain the confidentiality of your account credentials</li>
+                        <li>Notify us immediately of unauthorized account access</li>
+                        <li>Accept responsibility for all activities under your account</li>
+                    </ul>
+
+                    <h3>3.2 Account Eligibility</h3>
+                    <p>You must be at least 18 years old and have the legal capacity to enter into binding contracts. By registering, you represent and warrant that you meet these requirements.</p>
+
+                    <h3>3.3 Account Termination</h3>
+                    <p>We reserve the right to suspend or terminate accounts that violate these Terms, engage in fraudulent activity, or pose security risks to our systems or other clients.</p>
+
+                    <h2>4. Client Obligations and Acceptable Use</h2>
+
+                    <h3>4.1 Acceptable Use Policy</h3>
+                    <p>You agree to use our services only for lawful purposes and in compliance with all applicable laws and regulations. You shall not:</p>
+                    <ul>
+                        <li>Violate any local, state, national, or international law</li>
+                        <li>Infringe upon intellectual property rights of others</li>
+                        <li>Transmit malicious code, viruses, or harmful software</li>
+                        <li>Attempt to gain unauthorized access to our systems or networks</li>
+                        <li>Interfere with or disrupt service integrity or performance</li>
+                        <li>Engage in spamming, phishing, or fraudulent activities</li>
+                        <li>Use services to store or distribute illegal content</li>
+                        <li>Reverse engineer or attempt to extract source code</li>
+                    </ul>
+
+                    <h3>4.2 Client Responsibilities</h3>
+                    <p>Clients are responsible for:</p>
+                    <ul>
+                        <li>Maintaining appropriate licenses for all software and systems</li>
+                        <li>Backing up critical data and systems</li>
+                        <li>Providing accurate technical information and requirements</li>
+                        <li>Timely payment of all invoices and fees</li>
+                        <li>Compliance with security policies and procedures</li>
+                        <li>Coordinating with our team for service delivery</li>
+                    </ul>
+
+                    <h3>4.3 Data and Content</h3>
+                    <p>Clients retain ownership of their data and content. However, you grant us the necessary rights to:</p>
+                    <ul>
+                        <li>Access and process data to provide services</li>
+                        <li>Monitor systems for security and performance</li>
+                        <li>Create backups and disaster recovery copies</li>
+                        <li>Use aggregated, anonymized data for service improvement</li>
+                    </ul>
+
+                    <h2>5. Fees, Payment, and Billing</h2>
+
+                    <h3>5.1 Service Fees</h3>
+                    <p>Fees for services are specified in individual contracts, statements of work, or service orders. All fees are exclusive of applicable taxes unless otherwise stated.</p>
+
+                    <h3>5.2 Payment Terms</h3>
+                    <ul>
+                        <li><strong>Payment Schedule:</strong> As specified in individual agreements (typically net 30 days)</li>
+                        <li><strong>Payment Methods:</strong> Wire transfer, ACH, credit card, or other approved methods</li>
+                        <li><strong>Currency:</strong> All fees are in U.S. Dollars (USD) unless otherwise agreed</li>
+                        <li><strong>Invoicing:</strong> Invoices are issued monthly or as specified in agreements</li>
+                    </ul>
+
+                    <h3>5.3 Late Payments</h3>
+                    <p>Late payments may result in:</p>
+                    <ul>
+                        <li>Late fees of 1.5% per month (or maximum allowed by law)</li>
+                        <li>Suspension of services until payment is received</li>
+                        <li>Collection costs and legal fees</li>
+                        <li>Termination of services for chronic non-payment</li>
+                    </ul>
+
+                    <h3>5.4 Price Changes</h3>
+                    <p>We reserve the right to modify pricing with 60 days advance notice. Continued use of services after price changes constitutes acceptance of new pricing.</p>
+
+                    <h3>5.5 Taxes</h3>
+                    <p>Clients are responsible for all applicable sales, use, value-added, and other taxes (excluding taxes on our income). If we are required to collect such taxes, they will be added to invoices.</p>
+
+                    <h2>6. Intellectual Property Rights</h2>
+
+                    <h3>6.1 Company Intellectual Property</h3>
+                    <p>All intellectual property rights in our services, website, documentation, tools, and deliverables (excluding client data) remain our exclusive property. This includes:</p>
+                    <ul>
+                        <li>Software, scripts, and automation tools</li>
+                        <li>Documentation, methodologies, and processes</li>
+                        <li>Trademarks, logos, and branding materials</li>
+                        <li>Technical knowledge and expertise</li>
+                    </ul>
+
+                    <h3>6.2 Limited License</h3>
+                    <p>We grant you a limited, non-exclusive, non-transferable license to use our services and related materials solely for your internal business purposes during the term of service.</p>
+
+                    <h3>6.3 Client Intellectual Property</h3>
+                    <p>Clients retain all rights to their data, applications, and intellectual property. We claim no ownership over client materials.</p>
+
+                    <h3>6.4 Feedback and Suggestions</h3>
+                    <p>Any feedback, suggestions, or ideas you provide to us may be used by us without restriction or compensation.</p>
+
+                    <h2>7. Confidentiality</h2>
+
+                    <h3>7.1 Confidential Information</h3>
+                    <p>Both parties agree to maintain confidentiality of sensitive information disclosed during the business relationship, including:</p>
+                    <ul>
+                        <li>Technical specifications and architecture</li>
+                        <li>Business strategies and plans</li>
+                        <li>Pricing and financial information</li>
+                        <li>Security procedures and vulnerabilities</li>
+                        <li>Proprietary processes and methodologies</li>
+                    </ul>
+
+                    <h3>7.2 Permitted Disclosures</h3>
+                    <p>Confidential information may be disclosed when:</p>
+                    <ul>
+                        <li>Required by law or court order</li>
+                        <li>Already publicly available through no fault of the receiving party</li>
+                        <li>Independently developed without using confidential information</li>
+                        <li>Authorized in writing by the disclosing party</li>
+                    </ul>
+
+                    <h2>8. Service Level Agreements (SLAs)</h2>
+
+                    <h3>8.1 Uptime Guarantees</h3>
+                    <p>Standard uptime commitments are defined in individual service agreements. Typical SLA commitments include:</p>
+                    <ul>
+                        <li><strong>Infrastructure Services:</strong> 99.9% uptime guarantee</li>
+                        <li><strong>Network Services:</strong> 99.95% availability</li>
+                        <li><strong>Managed Services:</strong> Response times based on severity levels</li>
+                    </ul>
+
+                    <h3>8.2 Service Credits</h3>
+                    <p>In the event of SLA violations, clients may be eligible for service credits as specified in individual agreements. Credits are typically the sole remedy for SLA breaches.</p>
+
+                    <h3>8.3 Exclusions</h3>
+                    <p>SLAs do not apply during:</p>
+                    <ul>
+                        <li>Scheduled maintenance windows (with proper notice)</li>
+                        <li>Force majeure events</li>
+                        <li>Client-caused outages or misconfigurations</li>
+                        <li>Third-party service provider failures beyond our control</li>
+                    </ul>
+
+                    <h2>9. Warranties and Disclaimers</h2>
+
+                    <h3>9.1 Limited Warranty</h3>
+                    <p>We warrant that services will be performed in a professional and workmanlike manner consistent with industry standards. This warranty is limited to re-performance of non-conforming services.</p>
+
+                    <div class="warning-box">
+                        <p><strong>DISCLAIMER OF WARRANTIES</strong></p>
+                        <p>EXCEPT AS EXPRESSLY PROVIDED HEREIN, SERVICES ARE PROVIDED "AS IS" AND "AS AVAILABLE" WITHOUT WARRANTIES OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT.</p>
+                        <p>WE DO NOT WARRANT THAT SERVICES WILL BE UNINTERRUPTED, ERROR-FREE, OR COMPLETELY SECURE. YOU ASSUME FULL RESPONSIBILITY FOR YOUR USE OF OUR SERVICES.</p>
+                    </div>
+
+                    <h3>9.2 Third-Party Services</h3>
+                    <p>We may utilize third-party services and technologies. We are not responsible for the performance, reliability, or availability of third-party services, though we will make reasonable efforts to select reputable providers.</p>
+
+                    <h2>10. Limitation of Liability</h2>
+
+                    <div class="warning-box">
+                        <p><strong>LIMITATION OF LIABILITY</strong></p>
+                        <p>TO THE MAXIMUM EXTENT PERMITTED BY LAW, IN NO EVENT SHALL SAJECY SOLUTIONS BE LIABLE FOR:</p>
+                        <ul>
+                            <li>INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES</li>
+                            <li>LOSS OF PROFITS, REVENUE, DATA, OR BUSINESS OPPORTUNITIES</li>
+                            <li>SERVICE INTERRUPTIONS OR SECURITY BREACHES</li>
+                            <li>ERRORS, MISTAKES, OR INACCURACIES IN CONTENT OR SERVICES</li>
+                        </ul>
+                        <p>OUR TOTAL LIABILITY FOR ALL CLAIMS ARISING FROM OR RELATED TO SERVICES SHALL NOT EXCEED THE AMOUNT PAID BY CLIENT FOR SERVICES DURING THE TWELVE (12) MONTHS PRECEDING THE CLAIM.</p>
+                    </div>
+
+                    <h3>10.1 Jurisdictional Variations</h3>
+                    <p>Some jurisdictions do not allow limitation of liability for certain damages. In such cases, our liability shall be limited to the maximum extent permitted by applicable law.</p>
+
+                    <h2>11. Indemnification</h2>
+
+                    <h3>11.1 Client Indemnification</h3>
+                    <p>You agree to indemnify, defend, and hold harmless Sajecy Solutions, its officers, directors, employees, and agents from any claims, damages, losses, or expenses (including legal fees) arising from:</p>
+                    <ul>
+                        <li>Your violation of these Terms</li>
+                        <li>Your misuse of services</li>
+                        <li>Your violation of applicable laws or regulations</li>
+                        <li>Infringement of third-party rights</li>
+                        <li>Your data or content</li>
+                    </ul>
+
+                    <h3>11.2 Company Indemnification</h3>
+                    <p>We will indemnify you against third-party claims that our services infringe intellectual property rights, subject to limitations and procedures specified in individual agreements.</p>
+
+                    <h2>12. Data Security and Privacy</h2>
+
+                    <h3>12.1 Security Measures</h3>
+                    <p>We implement industry-standard security measures including:</p>
+                    <ul>
+                        <li>Encryption in transit and at rest</li>
+                        <li>Multi-factor authentication</li>
+                        <li>Regular security audits and penetration testing</li>
+                        <li>24/7 security monitoring</li>
+                        <li>Incident response procedures</li>
+                    </ul>
+
+                    <h3>12.2 Data Breach Notification</h3>
+                    <p>In the event of a data breach affecting your information, we will notify you within 72 hours of discovering the breach and take prompt remedial action.</p>
+
+                    <h3>12.3 Privacy Compliance</h3>
+                    <p>Our handling of personal information is governed by our Privacy Policy, which is incorporated by reference into these Terms. We maintain compliance with GDPR, CCPA, and other applicable privacy regulations.</p>
+
+                    <h2>13. Term and Termination</h2>
+
+                    <h3>13.1 Service Term</h3>
+                    <p>Services commence upon execution of a service agreement and continue for the term specified therein (typically 12, 24, or 36 months) unless terminated earlier per these Terms.</p>
+
+                    <h3>13.2 Termination for Convenience</h3>
+                    <p>Either party may terminate services with 90 days written notice. Early termination may result in:</p>
+                    <ul>
+                        <li>Payment of remaining contract value (if applicable)</li>
+                        <li>Early termination fees as specified in agreements</li>
+                        <li>Professional services fees for transition assistance</li>
+                    </ul>
+
+                    <h3>13.3 Termination for Cause</h3>
+                    <p>Either party may terminate immediately if the other party:</p>
+                    <ul>
+                        <li>Materially breaches these Terms and fails to cure within 30 days</li>
+                        <li>Becomes insolvent or files for bankruptcy</li>
+                        <li>Engages in fraudulent or illegal activities</li>
+                        <li>Poses security risks to systems or data</li>
+                    </ul>
+
+                    <h3>13.4 Effects of Termination</h3>
+                    <p>Upon termination:</p>
+                    <ul>
+                        <li>All outstanding fees become immediately due</li>
+                        <li>Access to services will be discontinued</li>
+                        <li>We will assist with data retrieval for 30 days (fees may apply)</li>
+                        <li>Confidentiality obligations continue indefinitely</li>
+                        <li>Client data may be deleted after 30 days</li>
+                    </ul>
+
+                    <h2>14. Force Majeure</h2>
+
+                    <p>Neither party shall be liable for delays or failures in performance resulting from circumstances beyond reasonable control, including:</p>
+                    <ul>
+                        <li>Natural disasters (earthquakes, floods, fires)</li>
+                        <li>Acts of war, terrorism, or civil unrest</li>
+                        <li>Government actions or regulations</li>
+                        <li>Labor strikes or disputes</li>
+                        <li>Telecommunications or internet failures</li>
+                        <li>Pandemics or health emergencies</li>
+                        <li>Power outages affecting multiple providers</li>
+                    </ul>
+
+                    <p>The affected party must notify the other party promptly and make reasonable efforts to minimize impact.</p>
+
+                    <h2>15. Dispute Resolution</h2>
+
+                    <h3>15.1 Informal Resolution</h3>
+                    <p>In the event of any dispute, both parties agree to first attempt resolution through good-faith negotiations for at least 30 days.</p>
+
+                    <h3>15.2 Mediation</h3>
+                    <p>If informal resolution fails, parties agree to submit the dispute to non-binding mediation before pursuing litigation or arbitration.</p>
+
+                    <h3>15.3 Arbitration</h3>
+                    <p>Any disputes not resolved through mediation shall be settled by binding arbitration in accordance with the Commercial Arbitration Rules of the American Arbitration Association. The arbitration shall take place in [Jurisdiction] and be conducted in English.</p>
+
+                    <h3>15.4 Class Action Waiver</h3>
+                    <p>You agree that disputes will be resolved on an individual basis and waive any right to participate in class action lawsuits or class-wide arbitration.</p>
+
+                    <h2>16. Governing Law and Jurisdiction</h2>
+
+                    <p>These Terms shall be governed by and construed in accordance with the laws of [State/Country], without regard to its conflict of law provisions. Both parties consent to the exclusive jurisdiction of courts located in [Jurisdiction] for any legal proceedings.</p>
+
+                    <h2>17. General Provisions</h2>
+
+                    <h3>17.1 Entire Agreement</h3>
+                    <p>These Terms, together with our Privacy Policy and any executed service agreements, constitute the entire agreement between parties and supersede all prior agreements or understandings.</p>
+
+                    <h3>17.2 Assignment</h3>
+                    <p>You may not assign these Terms or any rights hereunder without our prior written consent. We may assign these Terms to affiliates, successors, or acquirers without restriction.</p>
+
+                    <h3>17.3 Severability</h3>
+                    <p>If any provision of these Terms is found to be unenforceable, the remaining provisions shall remain in full force and effect.</p>
+
+                    <h3>17.4 Waiver</h3>
+                    <p>Failure to enforce any provision of these Terms shall not constitute a waiver of that provision or any other provision.</p>
+
+                    <h3>17.5 Notices</h3>
+                    <p>All notices must be in writing and sent to:</p>
+                    <ul>
+                        <li>Email: <a href="mailto:legal@sajecysolutions.com">legal@sajecysolutions.com</a></li>
+                        <li>Mail: Sajecy Solutions, Legal Department, [Company Address]</li>
+                    </ul>
+
+                    <h3>17.6 Independent Contractors</h3>
+                    <p>The parties are independent contractors. These Terms do not create a partnership, joint venture, agency, or employment relationship.</p>
+
+                    <h3>17.7 Export Compliance</h3>
+                    <p>You agree to comply with all applicable export control laws and regulations when using our services.</p>
+
+                    <h2>18. Contact Information</h2>
+
+                    <div class="contact-box">
+                        <h3>Legal and Contract Questions</h3>
+                        <p>For questions about these Terms of Service or to request service agreements:</p>
+
+                        <p>
+                            <strong>Email:</strong> <a href="mailto:legal@sajecysolutions.com">legal@sajecysolutions.com</a><br>
+                            <strong>Subject Line:</strong> Terms of Service Inquiry
+                        </p>
+
+                        <p>
+                            <strong>Sales and Service Inquiries:</strong><br>
+                            Email: <a href="mailto:sales@sajecysolutions.com">sales@sajecysolutions.com</a><br>
+                            Phone: [Contact Number]
+                        </p>
+
+                        <p>
+                            <strong>Mailing Address:</strong><br>
+                            Sajecy Solutions<br>
+                            Legal Department<br>
+                            [Company Address]
+                        </p>
+
+                        <p><strong>Business Hours:</strong> Monday - Friday, 9:00 AM - 6:00 PM [Time Zone]</p>
+                    </div>
+
+                    <h2>19. Acknowledgment</h2>
+
+                    <div class="info-box" style="margin-top: 3rem;">
+                        <p><strong>By Using Our Services, You Acknowledge:</strong></p>
+                        <ul>
+                            <li>You have read and understood these Terms of Service</li>
+                            <li>You agree to be bound by these Terms and our Privacy Policy</li>
+                            <li>You have the authority to enter into this agreement</li>
+                            <li>You will comply with all applicable laws and regulations</li>
+                            <li>You understand the limitations of liability and warranty disclaimers</li>
+                        </ul>
+                        <p style="margin-top: 1.5rem;"><strong>Thank you for choosing Sajecy Solutions as your trusted IT infrastructure partner.</strong></p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <div class="nav-logo" style="margin-bottom: 1rem;">
+                        <span class="logo-text">Sajecy</span>
+                        <span class="logo-tagline">Solutions</span>
+                    </div>
+                    <p class="footer-description">
+                        Data Center & Network Infrastructure Specialists delivering complete IT solutions - your trusted technology partner.
+                    </p>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Infrastructure Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="../services.html#datacenter">Data Center Services</a></li>
+                        <li><a href="../services/network-management.html">Network Management</a></li>
+                        <li><a href="../services.html">Fiber Optic Installation</a></li>
+                        <li><a href="../services.html">Smart Hands</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4>IT Solutions</h4>
+                    <ul class="footer-links">
+                        <li><a href="../services/cloud-hybrid.html">Cloud & Hybrid IT</a></li>
+                        <li><a href="../services/cybersecurity.html">Cybersecurity</a></li>
+                        <li><a href="../services/ai-automation.html">AI & Automation</a></li>
+                        <li><a href="../services/service-desk.html">Managed Services</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Company</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Sajecy</a></li>
+                        <li><a href="../why-sajecy.html">Why Choose Us</a></li>
+                        <li><a href="../resources/case-studies.html">Case Studies</a></li>
+                        <li><a href="../careers.html">Careers</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="footer-legal">
+                    <p>&copy; 2021 Sajecy Solutions. All rights reserved.</p>
+                    <div class="legal-links">
+                        <a href="privacy-policy.html">Privacy Policy</a>
+                        <span>|</span>
+                        <a href="terms-of-service.html">Terms of Service</a>
+                        <span>|</span>
+                        <a href="#security">Security</a>
+                    </div>
+                </div>
+                <div class="footer-badges">
+                    <span class="badge">ISO 27001</span>
+                    <span class="badge">SOC 2 Type II</span>
+                    <span class="badge">ITIL v4</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../../js/main-interactions.js"></script>
+</body>
+</html>

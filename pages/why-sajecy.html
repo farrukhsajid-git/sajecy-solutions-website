@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Why choose Sajecy Solutions? 15+ years infrastructure expertise, 99.9% uptime, 24/7 support, and complete IT solutions from data center to cloud.">
+    <title>Why Choose Sajecy Solutions | Infrastructure Excellence & Complete IT Solutions</title>
+
+    <!-- Preconnect to Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="../css/balanced-design-system.css">
+    <link rel="stylesheet" href="../css/balanced-homepage.css">
+
+
+    <!-- Logo Integration Styles -->
+    <style>
+        /* Logo Integration Styles - Test Implementation */
+        .nav-logo a {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 12px;
+            text-decoration: none;
+        }
+
+        .nav-logo-image {
+            width: 40px;
+            height: 40px;
+            flex-shrink: 0;
+            transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .nav-logo a:hover .nav-logo-image {
+            transform: scale(1.05) rotate(2deg);
+        }
+
+        .nav-logo-text-wrapper {
+            display: flex;
+            flex-direction: column;
+            line-height: 1.1;
+        }
+
+        .logo-text {
+            font-size: 24px;
+            font-weight: 900;
+            color: white;
+            letter-spacing: -0.02em;
+            margin: 0;
+        }
+
+        .logo-tagline {
+            font-size: 11px;
+            font-weight: 500;
+            color: rgba(255, 255, 255, 0.7);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin: 0;
+        }
+
+        /* Mobile adjustments */
+        @media (max-width: 639px) {
+            .nav-logo-image {
+                width: 36px;
+                height: 36px;
+            }
+
+            .logo-text {
+                font-size: 20px;
+            }
+
+            .logo-tagline {
+                font-size: 10px;
+            }
+        }
+
+        /* Desktop enhancement */
+        @media (min-width: 1024px) {
+            .nav-logo-image {
+                width: 44px;
+                height: 44px;
+            }
+
+            .logo-text {
+                font-size: 26px;
+            }
+
+            .logo-tagline {
+                font-size: 12px;
+            }
+        }
+
+        /* Accessibility: Focus state */
+        .nav-logo a:focus {
+            outline: 3px solid var(--primary-bright);
+            outline-offset: 4px;
+            border-radius: 8px;
+        }
+
+        /* Loading state optimization */
+        .nav-logo-image {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Skip to main content for accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Navigation -->
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
+        <div class="nav-wrapper">
+            <!-- Logo -->
+            <div class="nav-logo">
+                <a href="../index.html" aria-label="Sajecy Solutions Home">
+                    <!-- Logo Image -->
+                    <img
+                        src="../images/sajecy-logo.png"
+                        alt="Sajecy Solutions Logo"
+                        class="nav-logo-image"
+                        width="44"
+                        height="44"
+                    >
+                    <!-- Logo Text -->
+                    <div class="nav-logo-text-wrapper">
+                        <span class="logo-text">Sajecy</span>
+                        <span class="logo-tagline">Solutions</span>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Desktop Navigation -->
+            <ul class="nav-menu" id="navMenu">
+                <li class="nav-item dropdown">
+                    <button class="nav-link dropdown-toggle" aria-expanded="false">
+                        Services
+                        <svg class="arrow-icon" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                            <path d="M3 4.5L6 7.5L9 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                        </svg>
+                    </button>
+                    <div class="dropdown-menu">
+                        <div class="dropdown-grid">
+                            <div class="dropdown-column">
+                                <h4 class="dropdown-heading">Infrastructure Services</h4>
+                                <a href="services.html#datacenter">Data Center Services</a>
+                                <a href="services/network-management.html">Network Management</a>
+                            </div>
+                            <div class="dropdown-column">
+                                <h4 class="dropdown-heading">Modern IT Solutions</h4>
+                                <a href="services/cloud-hybrid.html">Cloud & Hybrid IT</a>
+                                <a href="services/cybersecurity.html">Cybersecurity</a>
+                                <a href="services/ai-automation.html">AI & Automation</a>
+                            </div>
+                            <div class="dropdown-column">
+                                <h4 class="dropdown-heading">Operations</h4>
+                                <a href="services/service-desk.html">Managed Services</a>
+                                <a href="services/it-asset-management.html">Asset Management</a>
+                                <a href="services.html">View All Services</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a href="why-sajecy.html" class="nav-link active">Why Sajecy</a>
+                </li>
+                <li class="nav-item">
+                    <a href="company/about.html" class="nav-link">Company</a>
+                </li>
+                <li class="nav-item">
+                    <a href="resources.html" class="nav-link">Resources</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <button class="nav-link dropdown-toggle" aria-expanded="false">
+                        Partnerships
+                        <svg class="arrow-icon" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                            <path d="M3 4.5L6 7.5L9 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                        </svg>
+                    </button>
+                    <div class="dropdown-menu">
+                        <div class="dropdown-grid">
+                            <div class="dropdown-column">
+                                <h4 class="dropdown-heading">Partner With Us</h4>
+                                <a href="partnerships.html#technology">Technology Partners</a>
+                                <a href="partnerships.html#channel">Channel Partners</a>
+                                <a href="partnerships.html#strategic">Strategic Alliances</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a href="careers.html" class="nav-link">Careers</a>
+                </li>
+            </ul>
+
+            <!-- CTA Button -->
+            <a href="company/contact.html" class="btn btn-primary nav-cta">
+                Contact Us
+            </a>
+
+            <!-- Mobile Menu Toggle -->
+            <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main id="main-content">
+
+        <!-- Hero Section -->
+        <section class="hero-slider" style="min-height: 85vh; padding-bottom: 4rem;">
+            <div class="hero-slide hero-slide-1 active">
+                <div class="hero-content">
+                    <span class="badge" style="margin-bottom: var(--space-4);">Why Choose Us</span>
+                    <h1>Infrastructure Expertise Meets Complete IT Solutions</h1>
+                    <p>Experience the difference of working with a partner who understands technology from the ground up. 15+ years of proven excellence in data center, network, cloud, security, and managed services.</p>
+                    <div class="hero-buttons">
+                        <a href="company/contact.html" class="btn btn-primary btn-lg">
+                            Schedule Consultation
+                        </a>
+                        <a href="services.html" class="btn btn-secondary btn-lg">
+                            Explore Services
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Trust Indicators Bar -->
+        <section class="trust-bar">
+            <div class="trust-grid">
+                <div class="trust-item">
+                    <span class="trust-value">15+</span>
+                    <span class="trust-label">Years Experience</span>
+                </div>
+                <div class="trust-item">
+                    <span class="trust-value">500+</span>
+                    <span class="trust-label">Racks Deployed</span>
+                </div>
+                <div class="trust-item">
+                    <span class="trust-value">99.9%</span>
+                    <span class="trust-label">Uptime SLA</span>
+                </div>
+                <div class="trust-item">
+                    <span class="trust-value">24/7</span>
+                    <span class="trust-label">NOC Support</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Key Differentiators Section -->
+        <section class="services-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">What Sets Us Apart</h2>
+                    <p class="section-description">
+                        Four key reasons leading enterprises choose Sajecy Solutions
+                    </p>
+                </div>
+
+                <div class="services-grid">
+
+                    <!-- Differentiator 1: Infrastructure Foundation -->
+                    <div class="service-card fade-in-up">
+                        <div class="service-icon">
+                            <svg width="48" height="48" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2"/>
+                            </svg>
+                        </div>
+                        <h3 class="service-title">Built on Infrastructure Excellence</h3>
+                        <p class="service-description">
+                            While others talk cloud-first, we understand that great IT starts with solid infrastructure. Our 15+ years of data center and network expertise gives us a foundation that most IT providers simply don't have.
+                        </p>
+                        <ul class="service-features">
+                            <li>500+ racks deployed at enterprise scale</li>
+                            <li>Certified fiber optic technicians</li>
+                            <li>24/7 smart hands support</li>
+                            <li>99.9% uptime guarantee</li>
+                        </ul>
+                    </div>
+
+                    <!-- Differentiator 2: Complete Solutions -->
+                    <div class="service-card fade-in-up">
+                        <div class="service-icon">
+                            <svg width="48" height="48" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z"/>
+                            </svg>
+                        </div>
+                        <h3 class="service-title">End-to-End IT Solutions</h3>
+                        <p class="service-description">
+                            One partner for your entire IT ecosystem. From physical infrastructure to cloud, security, AI, and managed services - we eliminate the complexity of managing multiple vendors.
+                        </p>
+                        <ul class="service-features">
+                            <li>Single point of contact</li>
+                            <li>Integrated solutions working together</li>
+                            <li>Technology aligned with business goals</li>
+                            <li>Simplified vendor management</li>
+                        </ul>
+                    </div>
+
+                    <!-- Differentiator 3: 24/7 Operations -->
+                    <div class="service-card fade-in-up">
+                        <div class="service-icon">
+                            <svg width="48" height="48" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                        </div>
+                        <h3 class="service-title">Always-On Support</h3>
+                        <p class="service-description">
+                            Your infrastructure never sleeps, and neither do we. Our 24/7 Network Operations Center and service desk ensure you have expert support whenever you need it.
+                        </p>
+                        <ul class="service-features">
+                            <li>24/7/365 NOC monitoring</li>
+                            <li>Proactive issue detection</li>
+                            <li>Average response under 15 minutes</li>
+                            <li>Certified engineers on every shift</li>
+                        </ul>
+                    </div>
+
+                    <!-- Differentiator 4: Modern Technology -->
+                    <div class="service-card fade-in-up">
+                        <div class="service-icon">
+                            <svg width="48" height="48" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                            </svg>
+                        </div>
+                        <h3 class="service-title">Cutting-Edge Innovation</h3>
+                        <p class="service-description">
+                            We combine proven infrastructure practices with modern cloud-native, AI-driven solutions. Get the stability of experience with the innovation of tomorrow.
+                        </p>
+                        <ul class="service-features">
+                            <li>AI-driven operations and automation</li>
+                            <li>Multi-cloud certified teams</li>
+                            <li>Zero-trust security architecture</li>
+                            <li>Continuous technology evolution</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Trust & Credentials Section -->
+        <section class="value-section">
+            <div class="container">
+                <div class="value-grid">
+
+                    <!-- LEFT: Certifications -->
+                    <div class="value-column">
+                        <span class="value-badge">Our Credentials</span>
+                        <h2>Certified Excellence</h2>
+                        <p class="value-lead">
+                            Industry-leading certifications and proven expertise you can trust
+                        </p>
+                        <ul class="value-list">
+                            <li>
+                                <strong>ISO 27001 Certified</strong>
+                                <span>Information security management standards</span>
+                            </li>
+                            <li>
+                                <strong>SOC 2 Type II</strong>
+                                <span>Audited security and compliance</span>
+                            </li>
+                            <li>
+                                <strong>Cloud Certified</strong>
+                                <span>AWS, Azure, and Google Cloud partners</span>
+                            </li>
+                            <li>
+                                <strong>Security Experts</strong>
+                                <span>CISSP, CEH, and penetration testing certified</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- RIGHT: Results -->
+                    <div class="value-column">
+                        <span class="value-badge" style="background: rgba(124, 58, 237, 0.1); color: var(--secondary-purple);">Our Results</span>
+                        <h2>Proven Success</h2>
+                        <p class="value-lead">
+                            Real outcomes from enterprise clients who trust Sajecy Solutions
+                        </p>
+                        <ul class="value-list">
+                            <li>
+                                <strong>99.97% Uptime</strong>
+                                <span>Financial services firm with 5,000+ employees</span>
+                            </li>
+                            <li>
+                                <strong>40% Cost Reduction</strong>
+                                <span>Infrastructure optimization and consolidation</span>
+                            </li>
+                            <li>
+                                <strong>Zero Security Incidents</strong>
+                                <span>Healthcare provider with 24/7 SOC monitoring</span>
+                            </li>
+                            <li>
+                                <strong>300+ Locations</strong>
+                                <span>Managed IT for national retail chain</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Client Testimonial Section -->
+        <section class="services-section" style="background: #bfdbfe;">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title" style="color: #1a202c;">What Our Clients Say</h2>
+                    <p class="section-description" style="color: #1a202c;">
+                        Trusted by leading enterprises across industries
+                    </p>
+                </div>
+
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <svg width="48" height="48" fill="currentColor" opacity="0.2">
+                                <path d="M14.017 21v-.5c0-4.142 3.358-7.5 7.5-7.5h.517V9.019A10.511 10.511 0 0011.5 19.5v.5h2.517zM2.517 21v-.5C2.517 16.358 5.875 13 10.017 13h.517V9.019A10.511 10.511 0 000 19.5v.5h2.517z"/>
+                            </svg>
+                        </div>
+                        <p class="service-description">
+                            "Sajecy transformed our entire IT infrastructure. They handled our data center consolidation, cloud migration, and ongoing operations with precision. Having one partner who understands both physical infrastructure and modern cloud solutions was a game-changer."
+                        </p>
+                        <h3 class="service-title" style="font-size: 16px; margin-top: 1.5rem;">VP of Infrastructure</h3>
+                        <p style="color: var(--text-secondary); font-size: 14px;">Global Financial Services | 5,000+ Employees</p>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <svg width="48" height="48" fill="currentColor" opacity="0.2">
+                                <path d="M14.017 21v-.5c0-4.142 3.358-7.5 7.5-7.5h.517V9.019A10.511 10.511 0 0011.5 19.5v.5h2.517zM2.517 21v-.5C2.517 16.358 5.875 13 10.017 13h.517V9.019A10.511 10.511 0 000 19.5v.5h2.517z"/>
+                            </svg>
+                        </div>
+                        <p class="service-description">
+                            "In healthcare, uptime isn't just about business - it's about patient care. Sajecy's 24/7 NOC and proactive monitoring have given us the reliability we need. Their cybersecurity expertise keeps our sensitive data protected while maintaining compliance."
+                        </p>
+                        <h3 class="service-title" style="font-size: 16px; margin-top: 1.5rem;">CTO</h3>
+                        <p style="color: var(--text-secondary); font-size: 14px;">Healthcare Technology Provider | 2,500+ Employees</p>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <svg width="48" height="48" fill="currentColor" opacity="0.2">
+                                <path d="M14.017 21v-.5c0-4.142 3.358-7.5 7.5-7.5h.517V9.019A10.511 10.511 0 0011.5 19.5v.5h2.517zM2.517 21v-.5C2.517 16.358 5.875 13 10.017 13h.517V9.019A10.511 10.511 0 000 19.5v.5h2.517z"/>
+                            </svg>
+                        </div>
+                        <p class="service-description">
+                            "Managing IT across 300+ retail locations was a nightmare until we partnered with Sajecy. Their managed services and service desk have streamlined everything. One call, one team, complete solutions - it's that simple."
+                        </p>
+                        <h3 class="service-title" style="font-size: 16px; margin-top: 1.5rem;">Director of IT Operations</h3>
+                        <p style="color: var(--text-secondary); font-size: 14px;">National Retail Chain | 300+ Locations</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Final CTA Section -->
+        <section class="cta-section">
+            <div class="cta-content">
+                <h2>Ready to Experience the Sajecy Difference?</h2>
+                <p>
+                    Join the leading enterprises who trust Sajecy Solutions for their complete IT infrastructure. Let's discuss how we can transform your technology operations.
+                </p>
+                <div class="cta-buttons">
+                    <a href="company/contact.html" class="btn btn-primary btn-lg">
+                        Schedule Free Consultation
+                    </a>
+                    <a href="services.html" class="btn btn-secondary btn-lg">
+                        Explore Our Services
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+
+                <!-- Company Info -->
+                <div class="footer-column">
+                    <div class="nav-logo" style="margin-bottom: 1rem;">
+                        <span class="logo-text">Sajecy</span>
+                        <span class="logo-tagline">Solutions</span>
+                    </div>
+                    <p class="footer-description">
+                        Data Center & Network Infrastructure Specialists delivering complete IT solutions - your trusted technology partner.
+                    </p>
+                </div>
+
+                <!-- Services Links -->
+                <div class="footer-column">
+                    <h4>Infrastructure Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="services.html#datacenter">Data Center Services</a></li>
+                        <li><a href="services/network-management.html">Network Management</a></li>
+                        <li><a href="services.html">Fiber Optic Installation</a></li>
+                        <li><a href="services.html">Smart Hands</a></li>
+                    </ul>
+                </div>
+
+                <!-- IT Solutions Links -->
+                <div class="footer-column">
+                    <h4>IT Solutions</h4>
+                    <ul class="footer-links">
+                        <li><a href="services/cloud-hybrid.html">Cloud & Hybrid IT</a></li>
+                        <li><a href="services/cybersecurity.html">Cybersecurity</a></li>
+                        <li><a href="services/ai-automation.html">AI & Automation</a></li>
+                        <li><a href="services/service-desk.html">Managed Services</a></li>
+                    </ul>
+                </div>
+
+                <!-- Company Links -->
+                <div class="footer-column">
+                    <h4>Company</h4>
+                    <ul class="footer-links">
+                        <li><a href="company/about.html">About Sajecy</a></li>
+                        <li><a href="why-sajecy.html">Why Choose Us</a></li>
+                        <li><a href="resources/case-studies.html">Case Studies</a></li>
+                        <li><a href="careers.html">Careers</a></li>
+                        <li><a href="company/contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="footer-bottom">
+                <div class="footer-legal">
+                    <p>&copy; 2021 Sajecy Solutions. All rights reserved.</p>
+                    <div class="legal-links">
+                        <a href="privacy-policy.html">Privacy Policy</a>
+                        <span>|</span>
+                        <a href="terms-of-service.html">Terms of Service</a>
+                    </div>
+                </div>
+                <div class="footer-badges">
+                    <span class="badge">ISO 27001</span>
+                    <span class="badge">SOC 2 Type II</span>
+                    <span class="badge">ITIL v4</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="../js/main-interactions.js"></script>
+</body>
+</html>

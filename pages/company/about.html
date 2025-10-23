@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn about Sajecy Solutions - 15+ years of infrastructure excellence, global team, and commitment to innovation in IT solutions.">
+    <title>About Sajecy Solutions | Our Story, Mission & Team</title>
+
+    <!-- Preconnect to Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="../../css/balanced-design-system.css">
+    <link rel="stylesheet" href="../../css/balanced-homepage.css">
+
+
+    <!-- Logo Integration Styles -->
+    <style>
+        /* Logo Integration Styles - Test Implementation */
+        .nav-logo a {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 12px;
+            text-decoration: none;
+        }
+
+        .nav-logo-image {
+            width: 40px;
+            height: 40px;
+            flex-shrink: 0;
+            transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .nav-logo a:hover .nav-logo-image {
+            transform: scale(1.05) rotate(2deg);
+        }
+
+        .nav-logo-text-wrapper {
+            display: flex;
+            flex-direction: column;
+            line-height: 1.1;
+        }
+
+        .logo-text {
+            font-size: 24px;
+            font-weight: 900;
+            color: white;
+            letter-spacing: -0.02em;
+            margin: 0;
+        }
+
+        .logo-tagline {
+            font-size: 11px;
+            font-weight: 500;
+            color: rgba(255, 255, 255, 0.7);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin: 0;
+        }
+
+        /* Mobile adjustments */
+        @media (max-width: 639px) {
+            .nav-logo-image {
+                width: 36px;
+                height: 36px;
+            }
+
+            .logo-text {
+                font-size: 20px;
+            }
+
+            .logo-tagline {
+                font-size: 10px;
+            }
+        }
+
+        /* Desktop enhancement */
+        @media (min-width: 1024px) {
+            .nav-logo-image {
+                width: 44px;
+                height: 44px;
+            }
+
+            .logo-text {
+                font-size: 26px;
+            }
+
+            .logo-tagline {
+                font-size: 12px;
+            }
+        }
+
+        /* Accessibility: Focus state */
+        .nav-logo a:focus {
+            outline: 3px solid var(--primary-bright);
+            outline-offset: 4px;
+            border-radius: 8px;
+        }
+
+        /* Loading state optimization */
+        .nav-logo-image {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Navigation -->
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
+        <div class="nav-wrapper">
+            <div class="nav-logo">
+                <a href="../../index.html" aria-label="Sajecy Solutions Home">
+                    <!-- Logo Image -->
+                    <img
+                        src="../../images/sajecy-logo.png"
+                        alt="Sajecy Solutions Logo"
+                        class="nav-logo-image"
+                        width="44"
+                        height="44"
+                    >
+                    <!-- Logo Text -->
+                    <div class="nav-logo-text-wrapper">
+                        <span class="logo-text">Sajecy</span>
+                        <span class="logo-tagline">Solutions</span>
+                    </div>
+                </a>
+            </div>
+
+            <ul class="nav-menu" id="navMenu">
+                <li class="nav-item dropdown">
+                    <button class="nav-link dropdown-toggle" aria-expanded="false">
+                        Services
+                        <svg class="arrow-icon" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                            <path d="M3 4.5L6 7.5L9 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                        </svg>
+                    </button>
+                    <div class="dropdown-menu">
+                        <div class="dropdown-grid">
+                            <div class="dropdown-column">
+                                <h4 class="dropdown-heading">Infrastructure Services</h4>
+                                <a href="../services.html#datacenter">Data Center Services</a>
+                                <a href="../services/network-management.html">Network Management</a>
+                            </div>
+                            <div class="dropdown-column">
+                                <h4 class="dropdown-heading">Modern IT Solutions</h4>
+                                <a href="../services/cloud-hybrid.html">Cloud & Hybrid IT</a>
+                                <a href="../services/cybersecurity.html">Cybersecurity</a>
+                                <a href="../services/ai-automation.html">AI & Automation</a>
+                            </div>
+                            <div class="dropdown-column">
+                                <h4 class="dropdown-heading">Operations</h4>
+                                <a href="../services/service-desk.html">Managed Services</a>
+                                <a href="../services/it-asset-management.html">Asset Management</a>
+                                <a href="../services.html">View All Services</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a href="../why-sajecy.html" class="nav-link">Why Sajecy</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link active">Company</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../resources.html" class="nav-link">Resources</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <button class="nav-link dropdown-toggle" aria-expanded="false">
+                        Partnerships
+                        <svg class="arrow-icon" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                            <path d="M3 4.5L6 7.5L9 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                        </svg>
+                    </button>
+                    <div class="dropdown-menu">
+                        <div class="dropdown-grid">
+                            <div class="dropdown-column">
+                                <h4 class="dropdown-heading">Partner With Us</h4>
+                                <a href="../partnerships.html#technology">Technology Partners</a>
+                                <a href="../partnerships.html#channel">Channel Partners</a>
+                                <a href="../partnerships.html#strategic">Strategic Alliances</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a href="../careers.html" class="nav-link">Careers</a>
+                </li>
+            </ul>
+
+            <a href="contact.html" class="btn btn-primary nav-cta">
+                Contact Us
+            </a>
+
+            <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <main id="main-content">
+
+        <!-- Hero Section -->
+        <section class="hero-slider" style="min-height: 85vh; padding-bottom: 4rem;">
+            <div class="hero-slide hero-slide-1 active">
+                <div class="hero-content">
+                    <span class="badge" style="margin-bottom: var(--space-4);">About Us</span>
+                    <h1>Building Enterprise Technology with Excellence</h1>
+                    <p>From data center specialists to complete IT solutions provider. Our foundation in infrastructure gives us the expertise to handle your entire technology ecosystem.</p>
+                    <div class="hero-buttons">
+                        <a href="contact.html" class="btn btn-primary btn-lg">
+                            Contact Our Team
+                        </a>
+                        <a href="../why-sajecy.html" class="btn btn-secondary btn-lg">
+                            Why Choose Us
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Trust Indicators Bar -->
+        <section class="trust-bar">
+            <div class="trust-grid">
+                <div class="trust-item">
+                    <span class="trust-value">2009</span>
+                    <span class="trust-label">Founded</span>
+                </div>
+                <div class="trust-item">
+                    <span class="trust-value">500+</span>
+                    <span class="trust-label">Racks Deployed</span>
+                </div>
+                <div class="trust-item">
+                    <span class="trust-value">40+</span>
+                    <span class="trust-label">Countries Served</span>
+                </div>
+                <div class="trust-item">
+                    <span class="trust-value">99.9%</span>
+                    <span class="trust-label">Uptime SLA</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Mission & Vision Section -->
+        <section class="services-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Our Mission & Vision</h2>
+                    <p class="section-description">
+                        Delivering excellence in enterprise IT infrastructure and solutions
+                    </p>
+                </div>
+
+                <div class="value-grid">
+                    <div class="value-column">
+                        <span class="value-badge">Our Mission</span>
+                        <h2>Deliver Excellence</h2>
+                        <p class="value-lead">
+                            To provide enterprise organizations with world-class IT infrastructure and solutions that drive business success.
+                        </p>
+                        <p style="color: var(--text-secondary); line-height: 1.8;">
+                            We combine deep technical expertise with a commitment to service excellence. From data center operations to cloud migrations, security implementations to managed services, we deliver solutions that work - reliably, securely, and efficiently.
+                        </p>
+                    </div>
+
+                    <div class="value-column">
+                        <span class="value-badge" style="background: rgba(124, 58, 237, 0.1); color: var(--secondary-purple);">Our Vision</span>
+                        <h2>Transform IT</h2>
+                        <p class="value-lead">
+                            To be the trusted partner that transforms how enterprises approach technology infrastructure.
+                        </p>
+                        <p style="color: var(--text-secondary); line-height: 1.8;">
+                            We envision a future where IT infrastructure is invisible, reliable, and perfectly aligned with business objectives. Where enterprises have one trusted partner for their complete technology needs, from physical infrastructure to cutting-edge innovation.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Core Values Section -->
+        <section class="services-section" style="background: #bfdbfe;">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title" style="color: #1a202c;">Our Core Values</h2>
+                    <p class="section-description" style="color: #1a202c;">
+                        The principles that guide everything we do
+                    </p>
+                </div>
+
+                <div class="services-grid">
+                    <div class="service-card fade-in-up">
+                        <div class="service-icon">
+                            <svg width="48" height="48" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                        </div>
+                        <h3 class="service-title">Excellence</h3>
+                        <p class="service-description">
+                            We don't do things halfway. From cable management to cloud architecture, we pursue excellence in every detail. Our 99.9% uptime SLA isn't marketing - it's our standard.
+                        </p>
+                    </div>
+
+                    <div class="service-card fade-in-up">
+                        <div class="service-icon">
+                            <svg width="48" height="48" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"/>
+                            </svg>
+                        </div>
+                        <h3 class="service-title">Partnership</h3>
+                        <p class="service-description">
+                            We're not vendors - we're partners. Your success is our success. We take the time to understand your business and deliver solutions that drive real outcomes.
+                        </p>
+                    </div>
+
+                    <div class="service-card fade-in-up">
+                        <div class="service-icon">
+                            <svg width="48" height="48" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                            </svg>
+                        </div>
+                        <h3 class="service-title">Innovation</h3>
+                        <p class="service-description">
+                            Technology never stops evolving, and neither do we. We continuously adopt new tools, methodologies, and approaches to keep our clients at the cutting edge.
+                        </p>
+                    </div>
+
+                    <div class="service-card fade-in-up">
+                        <div class="service-icon">
+                            <svg width="48" height="48" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+                            </svg>
+                        </div>
+                        <h3 class="service-title">Reliability</h3>
+                        <p class="service-description">
+                            When systems fail, businesses suffer. We build redundancy, monitor proactively, and respond rapidly. Our clients trust us because we deliver on our promises.
+                        </p>
+                    </div>
+
+                    <div class="service-card fade-in-up">
+                        <div class="service-icon">
+                            <svg width="48" height="48" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                            </svg>
+                        </div>
+                        <h3 class="service-title">Expertise</h3>
+                        <p class="service-description">
+                            Our team holds industry-leading certifications: AWS, Azure, GCP, CISSP, CEH, ITIL, and more. We invest in our people so they can deliver for you.
+                        </p>
+                    </div>
+
+                    <div class="service-card fade-in-up">
+                        <div class="service-icon">
+                            <svg width="48" height="48" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                        </div>
+                        <h3 class="service-title">Global Reach</h3>
+                        <p class="service-description">
+                            With teams across multiple continents and support for 40+ countries, we deliver consistent, world-class service wherever you operate.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Journey Timeline Section -->
+        <section class="value-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Our Journey</h2>
+                    <p class="section-description">
+                        Key milestones in our evolution from infrastructure specialists to complete IT partner
+                    </p>
+                </div>
+
+                <div class="services-grid">
+                    <div class="stat-card fade-in">
+                        <div class="stat-icon">
+                            <svg width="32" height="32" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2"/>
+                            </svg>
+                        </div>
+                        <div class="stat-number">2009</div>
+                        <div class="stat-label">Foundation</div>
+                        <div class="stat-description">Started with data center infrastructure and network services</div>
+                    </div>
+
+                    <div class="stat-card fade-in">
+                        <div class="stat-icon">
+                            <svg width="32" height="32" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                        </div>
+                        <div class="stat-number">2012</div>
+                        <div class="stat-label">24/7 NOC Launch</div>
+                        <div class="stat-description">Established round-the-clock monitoring and support</div>
+                    </div>
+
+                    <div class="stat-card fade-in">
+                        <div class="stat-icon">
+                            <svg width="32" height="32" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M3 15a4 4 0 004 4h9a5 5 0 10-5-5v0a4 4 0 01-4-4z"/>
+                            </svg>
+                        </div>
+                        <div class="stat-number">2015</div>
+                        <div class="stat-label">Cloud Expansion</div>
+                        <div class="stat-description">Added cloud migration and hybrid IT services</div>
+                    </div>
+
+                    <div class="stat-card fade-in">
+                        <div class="stat-icon">
+                            <svg width="32" height="32" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+                            </svg>
+                        </div>
+                        <div class="stat-number">2018</div>
+                        <div class="stat-label">Security & Compliance</div>
+                        <div class="stat-description">Achieved ISO 27001 and SOC 2 Type II certifications</div>
+                    </div>
+
+                    <div class="stat-card fade-in">
+                        <div class="stat-icon">
+                            <svg width="32" height="32" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                            </svg>
+                        </div>
+                        <div class="stat-number">2021</div>
+                        <div class="stat-label">AI & Automation</div>
+                        <div class="stat-description">Introduced AI-driven operations and automation services</div>
+                    </div>
+
+                    <div class="stat-card fade-in">
+                        <div class="stat-icon">
+                            <svg width="32" height="32" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                        </div>
+                        <div class="stat-number">2025</div>
+                        <div class="stat-label">Complete IT Partner</div>
+                        <div class="stat-description">Serving enterprises across 40+ countries with end-to-end solutions</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-section">
+            <div class="cta-content">
+                <h2>Ready to Partner with Sajecy Solutions?</h2>
+                <p>
+                    Join the enterprise clients who trust us for their complete IT infrastructure needs. Let's build something great together.
+                </p>
+                <div class="cta-buttons">
+                    <a href="contact.html" class="btn btn-primary btn-lg">
+                        Contact Our Team
+                    </a>
+                    <a href="../careers.html" class="btn btn-secondary btn-lg">
+                        Join Our Team
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <div class="nav-logo" style="margin-bottom: 1rem;">
+                        <span class="logo-text">Sajecy</span>
+                        <span class="logo-tagline">Solutions</span>
+                    </div>
+                    <p class="footer-description">
+                        Data Center & Network Infrastructure Specialists delivering complete IT solutions - your trusted technology partner.
+                    </p>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Infrastructure Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="../services.html#datacenter">Data Center Services</a></li>
+                        <li><a href="../services/network-management.html">Network Management</a></li>
+                        <li><a href="../services.html">Fiber Optic Installation</a></li>
+                        <li><a href="../services.html">Smart Hands</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4>IT Solutions</h4>
+                    <ul class="footer-links">
+                        <li><a href="../services/cloud-hybrid.html">Cloud & Hybrid IT</a></li>
+                        <li><a href="../services/cybersecurity.html">Cybersecurity</a></li>
+                        <li><a href="../services/ai-automation.html">AI & Automation</a></li>
+                        <li><a href="../services/service-desk.html">Managed Services</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Company</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Sajecy</a></li>
+                        <li><a href="../why-sajecy.html">Why Choose Us</a></li>
+                        <li><a href="../resources/case-studies.html">Case Studies</a></li>
+                        <li><a href="../careers.html">Careers</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="footer-legal">
+                    <p>&copy; 2021 Sajecy Solutions. All rights reserved.</p>
+                    <div class="legal-links">
+                        <a href="privacy-policy.html">Privacy Policy</a>
+                        <span>|</span>
+                        <a href="terms-of-service.html">Terms of Service</a>
+                    </div>
+                </div>
+                <div class="footer-badges">
+                    <span class="badge">ISO 27001</span>
+                    <span class="badge">SOC 2 Type II</span>
+                    <span class="badge">ITIL v4</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../../js/main-interactions.js"></script>
+</body>
+</html>

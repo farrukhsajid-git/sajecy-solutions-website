@@ -1,0 +1,113 @@
+/* Enhanced Navigation with Dropdowns */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: var(--white);
+    min-width: 280px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+    border-radius: 12px;
+    padding: 40px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: all 0.3s ease;
+    z-index: 1000;
+    margin-top: 10px;
+}
+
+/* Multi-column dropdown layouts */
+.dropdown-menu.mega-menu {
+    min-width: 900px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+
+.dropdown-menu.two-column {
+    min-width: 600px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+}
+
+.dropdown-menu.full-width {
+    grid-column: 1 / -1;
+}
+
+.dropdown:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.dropdown-menu .menu-heading {
+    display: block;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--dark-navy);
+    margin-bottom: 20px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.dropdown-menu .menu-heading:hover {
+    color: var(--primary-orange);
+}
+
+.dropdown-menu .menu-column {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.dropdown-menu .column-header {
+    display: block;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--dark-navy);
+    margin-bottom: 12px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.dropdown-menu .column-header:hover {
+    color: var(--primary-orange);
+}
+
+.dropdown-menu a {
+    display: block;
+    padding: 8px 0;
+    color: var(--dark-navy);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.95rem;
+    transition: all 0.3s;
+}
+
+.dropdown-menu a:hover {
+    color: var(--primary-orange);
+    padding-left: 8px;
+}
+
+.dropdown-menu .menu-section {
+    padding: 8px 0;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #9ca3af;
+    letter-spacing: 1px;
+}
+
+.dropdown > a .arrow {
+    display: inline-block;
+    transition: transform 0.3s;
+}
+
+.dropdown:hover > a .arrow {
+    transform: rotate(180deg);
+}

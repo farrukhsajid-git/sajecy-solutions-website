@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform Your IT Data Into Strategic Gold - Sajecy Solutions</title>
+    <meta name="description" content="Stop letting valuable IT data sit in silos. Unlock AI-powered insights, real-time analytics, and predictive intelligence with Sajecy's data engineering experts.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="../../css/balanced-design-system.css">
+    <link rel="stylesheet" href="../../css/balanced-homepage.css">
+    <style>
+        /* Data Engineering Page Specific Enhancements */
+        .service-hero {
+            background: linear-gradient(135deg, rgba(10, 79, 92, 0.95) 0%, rgba(26, 122, 138, 0.95) 100%),
+                        url('https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=1920&q=80') center/cover;
+            position: relative;
+        }
+
+        .service-hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="50" cy="50" r="40" fill="none" stroke="rgba(255,107,53,0.05)" stroke-width="0.5"/></svg>');
+            background-size: 100px 100px;
+            opacity: 0.2;
+        }
+
+        .hero-circle-inner img,
+        .offering-circle img,
+        .circle-image-photo {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+
+        .challenge-card {
+            background: linear-gradient(135deg, #0a4f5c 0%, #165966 100%);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation (keeping existing nav structure) -->
+    <nav class="navbar">
+        <div class="container-fluid">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <a href="../../index.html">
+                        <span class="logo-text">sajecy</span>
+                    </a>
+                </div>
+                <ul class="nav-menu" id="navMenu">
+                    <li class="dropdown">
+                        <a href="../why-sajecy.html">Why Sajecy <span class="arrow">▼</span></a>
+                        <div class="dropdown-menu">
+                            <a href="../company/about.html">About Us</a>
+                            <a href="../company/mission.html">Our Mission</a>
+                            <a href="../company/values.html">Values</a>
+                        </div>
+                    </li>
+                    <li class="dropdown active">
+                        <a href="../services.html">What We Do <span class="arrow">▼</span></a>
+                        <div class="dropdown-menu mega-menu">
+                            <a href="../services.html" class="menu-heading full-width">Services →</a>
+                            <div class="menu-column">
+                                <a href="#" class="column-header">Cloud, Infrastructure, & Security →</a>
+                                <a href="network-management.html">Networking & Data Centers →</a>
+                                <a href="cloud-hybrid.html">Cloud and Hybrid IT →</a>
+                                <a href="cybersecurity.html">Cybersecurity →</a>
+                            </div>
+                            <div class="menu-column">
+                                <a href="#" class="column-header">Enterprise AI Services →</a>
+                                <a href="ai-automation.html">AI Automation →</a>
+                                <a href="data-engineering.html">Data Engineering →</a>
+                            </div>
+                            <div class="menu-column">
+                                <a href="#" class="column-header">Digital Workplace Services →</a>
+                                <a href="it-asset-management.html">IT Asset Management Services →</a>
+                                <a href="service-desk.html">Service Desk Services →</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="../partnerships.html">Partnerships <span class="arrow">▼</span></a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="../resources.html">Resources <span class="arrow">▼</span></a>
+                        <div class="dropdown-menu two-column">
+                            <a href="../resources.html" class="menu-heading full-width">Resources Overview →</a>
+                            <div class="menu-column">
+                                <a href="../resources/case-studies.html">Case Study →</a>
+                            </div>
+                            <div class="menu-column">
+                                <a href="../resources/blog.html">Blog →</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="../company/about.html">Company <span class="arrow">▼</span></a>
+                        <div class="dropdown-menu">
+                            <a href="../company/about.html">About Us</a>
+                            <a href="../company/leadership.html">Leadership</a>
+                            <a href="../company/contact.html">Contact</a>
+                        </div>
+                    </li>
+                    <li><a href="../careers.html">Careers at Sajecy</a></li>
+                </ul>
+                <a href="../company/contact.html" class="btn-contact smooth-all hover-lift">Contact Us</a>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="service-hero">
+        <div class="container">
+            <div class="service-hero-content animate-on-scroll fade-in-up">
+                <p style="font-size: 0.9rem; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 20px; opacity: 0.9;">Data Engineering</p>
+                <h1 class="service-hero-title">Transform Your IT Data Into Strategic Gold</h1>
+                <p class="service-hero-subtitle">
+                    Stop letting valuable IT data sit in silos. Unlock AI-powered insights, real-time analytics, and predictive intelligence and turn those insights into powerful solutions that solve business challenges, streamline operations, and fuel growth with our IT data engineering experts.
+                </p>
+                <a href="../company/contact.html" class="btn-hero hover-lift ripple animate-on-scroll fade-in-up delay-200">
+                    <span class="btn-icon">→</span>
+                    <span>Start with a data maturity assessment</span>
+                </a>
+            </div>
+        </div>
+        <div class="service-hero-image float-animation">
+            <div class="hero-circle">
+                <div class="hero-circle-inner">
+                    <img src="https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=800&q=80" alt="Data Engineering and Analytics" class="parallax-image" data-speed="0.3">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Value Proposition Stats -->
+    <section style="background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); padding: 80px 0;">
+        <div class="container">
+            <div class="stagger-container" data-stagger-delay="100" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 40px; max-width: 1200px; margin: 0 auto;">
+                <div class="stat-card animate-on-scroll scale-in" style="background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(10px);">
+                    <div class="stat-number" style="color: white;">85%</div>
+                    <div class="stat-label" style="color: rgba(255, 255, 255, 0.9);">Reduction in data silos</div>
+                </div>
+                <div class="stat-card animate-on-scroll scale-in" style="background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(10px);">
+                    <div class="stat-number" style="color: white;">3x</div>
+                    <div class="stat-label" style="color: rgba(255, 255, 255, 0.9);">Faster decision making</div>
+                </div>
+                <div class="stat-card animate-on-scroll scale-in" style="background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(10px);">
+                    <div class="stat-number" style="color: white;">60%</div>
+                    <div class="stat-label" style="color: rgba(255, 255, 255, 0.9);">Improved operational efficiency</div>
+                </div>
+                <div class="stat-card animate-on-scroll scale-in" style="background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(10px);">
+                    <div class="stat-number" style="color: white;">24/7</div>
+                    <div class="stat-label" style="color: rgba(255, 255, 255, 0.9);">Real-time data monitoring</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Common Data Challenges Section -->
+    <section class="challenges-section">
+        <div class="container">
+            <div class="challenges-intro animate-on-scroll fade-in-up">
+                <h2>Is Your IT Data a Strategic Asset or a Hidden Liability?</h2>
+                <p>We help you transform scattered data into strategic value.</p>
+            </div>
+            <div class="challenges-grid stagger-container" data-stagger-delay="100">
+                <div class="challenge-card hover-lift">
+                    <div class="challenge-icon">
+                        <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="10" y="15" width="12" height="20" stroke="white" stroke-width="2" fill="none"/>
+                            <rect x="28" y="10" width="12" height="25" stroke="white" stroke-width="2" fill="none"/>
+                            <circle cx="16" cy="20" r="2" fill="white"/>
+                            <circle cx="16" cy="25" r="2" fill="white"/>
+                            <circle cx="34" cy="15" r="2" fill="white"/>
+                        </svg>
+                    </div>
+                    <h3>Data Trapped in Silos</h3>
+                    <p>Critical IT information is scattered across systems, making it impossible to get a complete picture of your infrastructure and performance</p>
+                </div>
+                <div class="challenge-card hover-lift">
+                    <div class="challenge-icon">
+                        <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M15 20L25 15L35 20L25 25L15 20Z" stroke="white" stroke-width="2" fill="none"/>
+                            <path d="M15 20V30L25 35L35 30V20" stroke="white" stroke-width="2" fill="none"/>
+                            <path d="M20 22L20 28" stroke="white" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <h3>Outdated Static Reports</h3>
+                    <p>Relying on yesterday's data to make today's decisions. Your competition is moving faster with real-time insights</p>
+                </div>
+                <div class="challenge-card hover-lift">
+                    <div class="challenge-icon">
+                        <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="25" cy="25" r="12" stroke="white" stroke-width="2" fill="none"/>
+                            <path d="M25 18V25L30 30" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                            <circle cx="25" cy="25" r="2" fill="white"/>
+                        </svg>
+                    </div>
+                    <h3>Hidden Opportunities</h3>
+                    <p>Valuable patterns, trends, and predictive signals are buried in your data that could drive innovation and competitive advantage</p>
+                </div>
+                <div class="challenge-card hover-lift">
+                    <div class="challenge-icon">
+                        <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="25" cy="25" r="15" stroke="white" stroke-width="2" fill="none"/>
+                            <path d="M25 15V25M25 25L32 32" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3>Reactive Problem Solving</h3>
+                    <p>Fighting fires instead of preventing them. Missing the predictive power that could keep your systems running smoothly</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- IT Data Maturity Assessment -->
+    <section class="service-offering teal-bg">
+        <div class="container">
+            <div class="offering-grid">
+                <div class="offering-image animate-on-scroll scale-in">
+                    <div class="offering-circle">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80" alt="Data Maturity Assessment Dashboard" class="circle-image-photo hover-scale">
+                    </div>
+                </div>
+                <div class="offering-content animate-on-scroll fade-in-right delay-200">
+                    <h2>IT Data Maturity Assessment</h2>
+                    <p class="intro-text">
+                        Unlock business outcomes faster. Our comprehensive evaluation of your IT landscape—logs, events, records, knowledge assets, and inventory—shows you exactly how to get there.
+                    </p>
+                    <h3>What we deliver:</h3>
+                    <ul class="offering-list">
+                        <li><strong>Data Maturity Baseline:</strong> Identify current state and improvement opportunities for data-driven decisions</li>
+                        <li><strong>Actionable Insights & Solutions:</strong> Discover specific opportunities to improve resilience, increase efficiency, and turn your IT data into business advantage</li>
+                        <li>Performance diagnostics across your data infrastructure</li>
+                        <li>A clear roadmap to transform scattered data into strategic intelligence</li>
+                    </ul>
+                    <p class="offering-footer">
+                        We don't just assess—we partner with you through dedicated transformation services to make your roadmap a reality.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AI-Powered IT Data Insights -->
+    <section class="service-offering">
+        <div class="container">
+            <div class="offering-grid">
+                <div class="offering-content animate-on-scroll fade-in-left delay-200">
+                    <h2>AI-Powered IT Data Insights & Solutions</h2>
+                    <p class="intro-text">
+                        Ditch static reports and unlock dynamic, AI-powered insights that not only drive smarter, faster decisions but also power real-world solutions to tackle your toughest business challenges. Our intelligent dashboards and predictive analytics put transformative knowledge—and action—right at your fingertips.
+                    </p>
+                    <h3>What we deliver:</h3>
+                    <ul class="offering-list">
+                        <li><strong>Instant Insights, Zero Guesswork:</strong> Real-time visibility of hidden trends and forecasting with self-service capabilities</li>
+                        <li><strong>Knowledge-Driven Solutions:</strong> Leverage IT insights to solve critical problems and fuel strategic business expansion</li>
+                        <li>Predictive analytics that prevent issues before they impact operations</li>
+                        <li>Intelligent automation that learns and adapts to your environment</li>
+                    </ul>
+                    <p class="offering-footer">
+                        Transform data from a reporting tool into a strategic decision-making engine.
+                    </p>
+                </div>
+                <div class="offering-image animate-on-scroll scale-in">
+                    <div class="offering-circle">
+                        <img src="https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=800&q=80" alt="AI-Powered Analytics" class="circle-image-photo hover-scale">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- IT Data Management as a Service -->
+    <section class="service-offering teal-bg">
+        <div class="container">
+            <div class="offering-grid">
+                <div class="offering-image animate-on-scroll scale-in">
+                    <div class="offering-circle">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80" alt="Data Management Services" class="circle-image-photo hover-scale">
+                    </div>
+                </div>
+                <div class="offering-content animate-on-scroll fade-in-right delay-200">
+                    <h2>IT Data Management as a Service</h2>
+                    <p class="intro-text">
+                        Get a single, reliable, and consistent view of your organization's IT data. Our managed service enhances decision-making and boosts operational efficiency with continuous governance and oversight.
+                    </p>
+                    <h3>What we deliver:</h3>
+                    <ul class="offering-list">
+                        <li><strong>IT Master Data Management (MDM):</strong> Real-time, reliable IT data delivered where and when you need it</li>
+                        <li><strong>Continuous Data Governance:</strong> Ensure accuracy, consistency, reliability, and compliance at scale</li>
+                        <li>Ongoing data quality monitoring and improvement</li>
+                        <li>Seamless integration across your entire IT ecosystem</li>
+                    </ul>
+                    <p class="offering-footer">
+                        Focus on using your data, not managing it. We handle the complexity so you can drive results.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How We Transform Your IT Data -->
+    <section class="how-we-work">
+        <div class="container">
+            <h2 class="animate-on-scroll fade-in-up">How We Transform Your IT Data</h2>
+            <p class="subtitle animate-on-scroll fade-in-up delay-100">From assessment to implementation, we make your IT data work harder for your business.</p>
+            <div class="phases-grid stagger-container" data-stagger-delay="150">
+                <div class="phase-card hover-lift">
+                    <h3>1. Assess</h3>
+                    <p>Comprehensive evaluation of your data landscape—identifying gaps, opportunities, and quick wins.</p>
+                </div>
+                <div class="phase-card hover-lift">
+                    <h3>2. Design</h3>
+                    <p>Build a tailored data strategy and architecture that aligns with your business goals and growth plans.</p>
+                </div>
+                <div class="phase-card hover-lift">
+                    <h3>3. Implement</h3>
+                    <p>Deploy data pipelines, AI-powered analytics, and governance frameworks with minimal disruption.</p>
+                </div>
+                <div class="phase-card hover-lift">
+                    <h3>4. Optimize</h3>
+                    <p>Continuous improvement, automation, and intelligence to maximize the value of your data investments.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Sajecy for Data Engineering -->
+    <section class="why-sajecy-cloud">
+        <div class="container">
+            <div class="why-content animate-on-scroll fade-in-up">
+                <h2>Why Sajecy for Data Engineering</h2>
+                <p class="intro">
+                    We've helped global enterprises transform their IT data from scattered information into strategic intelligence that drives real business outcomes.
+                </p>
+                <div class="why-points">
+                    <div class="why-point animate-on-scroll fade-in-left delay-200">
+                        <h3>IT Data Expertise That Delivers.</h3>
+                        <p>Deep understanding of IT infrastructure data, combined with cutting-edge AI and analytics capabilities.</p>
+                    </div>
+                    <div class="why-point animate-on-scroll fade-in-left delay-300">
+                        <h3>From Insights to Action.</h3>
+                        <p>We don't just show you the data—we help you build solutions that solve real business problems.</p>
+                    </div>
+                    <div class="why-point animate-on-scroll fade-in-left delay-400">
+                        <h3>Proven Track Record.</h3>
+                        <p>Trusted by Fortune 500 companies to transform their IT data into competitive advantage.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="final-cta">
+        <div class="container animate-on-scroll scale-in">
+            <h2>Ready to Turn Your IT Data Into Strategic Gold?</h2>
+            <p style="font-size: 1.2rem; margin-bottom: 40px; color: #ffffff; opacity: 0.95;">Future-proof your business with intelligent IT data. Don't let valuable insights slip through the cracks.</p>
+            <a href="../company/contact.html" class="btn-cta-large hover-lift ripple btn-pulse">Contact Us</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-social">
+                    <p>Join the conversation and connect with like-minded individuals on our social media channels.</p>
+                    <div class="social-links">
+                        <a href="#facebook" class="hover-brightness">Facebook →</a>
+                        <a href="#instagram" class="hover-brightness">Instagram →</a>
+                        <a href="#linkedin" class="hover-brightness">LinkedIn →</a>
+                        <a href="#twitter" class="hover-brightness">Twitter →</a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Cloud, Infrastructure, and Security</h4>
+                        <ul>
+                            <li><a href="cloud-hybrid.html" class="smooth-opacity">Cloud and Hybrid IT</a></li>
+                            <li><a href="network-management.html" class="smooth-opacity">Network and Data Center Management</a></li>
+                            <li><a href="cybersecurity.html" class="smooth-opacity">Cybersecurity</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Enterprise AI Services</h4>
+                        <ul>
+                            <li><a href="data-engineering.html" class="smooth-opacity">Data Engineering</a></li>
+                            <li><a href="ai-automation.html" class="smooth-opacity">AI Automation</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Digital Workplace Services</h4>
+                        <ul>
+                            <li><a href="service-desk.html" class="smooth-opacity">Service Desk</a></li>
+                            <li><a href="it-asset-management.html" class="smooth-opacity">IT Asset Management</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-links-row">
+                <div class="footer-column">
+                    <h4>Why Sajecy</h4>
+                    <ul>
+                        <li><a href="../company/about.html" class="smooth-opacity">About Us</a></li>
+                        <li><a href="../company/contact.html" class="smooth-opacity">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="../resources/blog.html" class="smooth-opacity">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Careers at Sajecy</h4>
+                    <ul>
+                        <li><a href="../careers.html" class="smooth-opacity">Open Positions</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-logo">
+                    <span class="logo-text-footer">sajecy</span>
+                </div>
+                <div class="footer-legal">
+                    <a href="#privacy" class="smooth-opacity">Privacy</a>
+                    <span>|</span>
+                    <a href="#terms" class="smooth-opacity">Terms</a>
+                </div>
+                <div class="footer-copyright">
+                    <p>Sajecy Inc. © 2025</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../../js/script.js"></script>
+    <script src="../../js/animations.js"></script>
+</body>
+</html>

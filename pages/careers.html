@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Join Sajecy Solutions - Build your career with a leading IT infrastructure company. Explore open positions in engineering, operations, and more.">
+    <title>Careers at Sajecy Solutions | Join Our Team</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="../css/balanced-design-system.css">
+    <link rel="stylesheet" href="../css/balanced-homepage.css">
+
+
+    <!-- Logo Integration Styles -->
+    <style>
+        /* Logo Integration Styles - Test Implementation */
+        .nav-logo a {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 12px;
+            text-decoration: none;
+        }
+
+        .nav-logo-image {
+            width: 40px;
+            height: 40px;
+            flex-shrink: 0;
+            transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .nav-logo a:hover .nav-logo-image {
+            transform: scale(1.05) rotate(2deg);
+        }
+
+        .nav-logo-text-wrapper {
+            display: flex;
+            flex-direction: column;
+            line-height: 1.1;
+        }
+
+        .logo-text {
+            font-size: 24px;
+            font-weight: 900;
+            color: white;
+            letter-spacing: -0.02em;
+            margin: 0;
+        }
+
+        .logo-tagline {
+            font-size: 11px;
+            font-weight: 500;
+            color: rgba(255, 255, 255, 0.7);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin: 0;
+        }
+
+        /* Mobile adjustments */
+        @media (max-width: 639px) {
+            .nav-logo-image {
+                width: 36px;
+                height: 36px;
+            }
+
+            .logo-text {
+                font-size: 20px;
+            }
+
+            .logo-tagline {
+                font-size: 10px;
+            }
+        }
+
+        /* Desktop enhancement */
+        @media (min-width: 1024px) {
+            .nav-logo-image {
+                width: 44px;
+                height: 44px;
+            }
+
+            .logo-text {
+                font-size: 26px;
+            }
+
+            .logo-tagline {
+                font-size: 12px;
+            }
+        }
+
+        /* Accessibility: Focus state */
+        .nav-logo a:focus {
+            outline: 3px solid var(--primary-bright);
+            outline-offset: 4px;
+            border-radius: 8px;
+        }
+
+        /* Loading state optimization */
+        .nav-logo-image {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
+        <div class="nav-wrapper">
+            <div class="nav-logo">
+                <a href="../index.html" aria-label="Sajecy Solutions Home">
+                    <!-- Logo Image -->
+                    <img
+                        src="../images/sajecy-logo.png"
+                        alt="Sajecy Solutions Logo"
+                        class="nav-logo-image"
+                        width="44"
+                        height="44"
+                    >
+                    <!-- Logo Text -->
+                    <div class="nav-logo-text-wrapper">
+                        <span class="logo-text">Sajecy</span>
+                        <span class="logo-tagline">Solutions</span>
+                    </div>
+                </a>
+            </div>
+
+            <ul class="nav-menu" id="navMenu">
+                <li class="nav-item dropdown">
+                    <button class="nav-link dropdown-toggle" aria-expanded="false">
+                        Services
+                        <svg class="arrow-icon" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                            <path d="M3 4.5L6 7.5L9 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                        </svg>
+                    </button>
+                    <div class="dropdown-menu">
+                        <div class="dropdown-grid">
+                            <div class="dropdown-column">
+                                <h4 class="dropdown-heading">Infrastructure Services</h4>
+                                <a href="services.html#datacenter">Data Center Services</a>
+                                <a href="services/network-management.html">Network Management</a>
+                            </div>
+                            <div class="dropdown-column">
+                                <h4 class="dropdown-heading">Modern IT Solutions</h4>
+                                <a href="services/cloud-hybrid.html">Cloud & Hybrid IT</a>
+                                <a href="services/cybersecurity.html">Cybersecurity</a>
+                                <a href="services/ai-automation.html">AI & Automation</a>
+                            </div>
+                            <div class="dropdown-column">
+                                <h4 class="dropdown-heading">Operations</h4>
+                                <a href="services/service-desk.html">Managed Services</a>
+                                <a href="services/it-asset-management.html">Asset Management</a>
+                                <a href="services.html">View All Services</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a href="why-sajecy.html" class="nav-link">Why Sajecy</a>
+                </li>
+                <li class="nav-item">
+                    <a href="company/about.html" class="nav-link">Company</a>
+                </li>
+                <li class="nav-item">
+                    <a href="resources.html" class="nav-link">Resources</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <button class="nav-link dropdown-toggle" aria-expanded="false">
+                        Partnerships
+                        <svg class="arrow-icon" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                            <path d="M3 4.5L6 7.5L9 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                        </svg>
+                    </button>
+                    <div class="dropdown-menu">
+                        <div class="dropdown-grid">
+                            <div class="dropdown-column">
+                                <h4 class="dropdown-heading">Partner With Us</h4>
+                                <a href="partnerships.html#technology">Technology Partners</a>
+                                <a href="partnerships.html#channel">Channel Partners</a>
+                                <a href="partnerships.html#strategic">Strategic Alliances</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a href="careers.html" class="nav-link active">Careers</a>
+                </li>
+            </ul>
+
+            <a href="company/contact.html" class="btn btn-primary nav-cta">Contact Us</a>
+
+            <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <main id="main-content">
+
+        <!-- Hero Section -->
+        <section class="hero-slider" style="min-height: 85vh; padding-bottom: 4rem;">
+            <div class="hero-slide hero-slide-1 active">
+                <div class="hero-content">
+                    <span class="badge" style="margin-bottom: var(--space-4);">Join Our Team</span>
+                    <h1>Build Your Career with Sajecy Solutions</h1>
+                    <p>Work on cutting-edge enterprise infrastructure projects. Solve meaningful technical challenges. Grow with a team of industry experts who value innovation, excellence, and collaboration.</p>
+                    <div class="hero-buttons">
+                        <a href="#open-positions" class="btn btn-primary btn-lg">
+                            View Open Positions
+                        </a>
+                        <a href="company/about.html" class="btn btn-secondary btn-lg">
+                            About Sajecy
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Trust Indicators Bar -->
+        <section class="trust-bar">
+            <div class="trust-grid">
+                <div class="trust-item">
+                    <span class="trust-value">15+</span>
+                    <span class="trust-label">Years Excellence</span>
+                </div>
+                <div class="trust-item">
+                    <span class="trust-value">40+</span>
+                    <span class="trust-label">Countries</span>
+                </div>
+                <div class="trust-item">
+                    <span class="trust-value">100%</span>
+                    <span class="trust-label">Certification Funding</span>
+                </div>
+                <div class="trust-item">
+                    <span class="trust-value">Remote</span>
+                    <span class="trust-label">Friendly</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Work Here Section -->
+        <section class="services-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Why Work at Sajecy</h2>
+                    <p class="section-description">
+                        We invest in our people because they're our greatest asset
+                    </p>
+                </div>
+
+                <div class="services-grid">
+
+                    <div class="service-card fade-in-up">
+                        <div class="service-icon">
+                            <svg width="48" height="48" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/>
+                            </svg>
+                        </div>
+                        <h3 class="service-title">Career Growth</h3>
+                        <p class="service-description">
+                            We fund certifications (AWS, Azure, CISSP, ITIL) and provide clear advancement paths. Our engineers lead, not just implement.
+                        </p>
+                        <ul class="service-features">
+                            <li>100% certification funding</li>
+                            <li>Mentorship programs</li>
+                            <li>Clear promotion paths</li>
+                        </ul>
+                    </div>
+
+                    <div class="service-card fade-in-up">
+                        <div class="service-icon">
+                            <svg width="48" height="48" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                            </svg>
+                        </div>
+                        <h3 class="service-title">Cutting-Edge Tech</h3>
+                        <p class="service-description">
+                            Work with enterprise clients on real-world infrastructure, cloud, AI, and security projects. Solve meaningful technical challenges.
+                        </p>
+                        <ul class="service-features">
+                            <li>Enterprise-scale projects</li>
+                            <li>Latest technologies</li>
+                            <li>Real technical challenges</li>
+                        </ul>
+                    </div>
+
+                    <div class="service-card fade-in-up">
+                        <div class="service-icon">
+                            <svg width="48" height="48" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                        </div>
+                        <h3 class="service-title">Competitive Pay</h3>
+                        <p class="service-description">
+                            Market-leading salaries, performance bonuses, equity options, and comprehensive benefits including health, dental, and 401(k) matching.
+                        </p>
+                        <ul class="service-features">
+                            <li>Top-tier compensation</li>
+                            <li>Performance bonuses</li>
+                            <li>Full benefits package</li>
+                        </ul>
+                    </div>
+
+                    <div class="service-card fade-in-up">
+                        <div class="service-icon">
+                            <svg width="48" height="48" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                        </div>
+                        <h3 class="service-title">Work-Life Balance</h3>
+                        <p class="service-description">
+                            Flexible remote options, unlimited PTO policy, and we actually encourage you to use it. Work hard, live well.
+                        </p>
+                        <ul class="service-features">
+                            <li>Remote/hybrid flexibility</li>
+                            <li>Unlimited PTO</li>
+                            <li>Flexible schedules</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Open Positions Section -->
+        <section class="services-section" id="open-positions" style="background: #bfdbfe;">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title" style="color: #1a202c;">Open Positions</h2>
+                    <p class="section-description" style="color: #1a202c;">Join us in shaping the future of enterprise IT</p>
+                </div>
+
+                <!-- Job postings temporarily hidden - uncomment when positions are available -->
+                <!--
+                <div class="services-grid">
+
+                    <! -- Senior Network Engineer -- >
+                    <div class="service-card fade-in-up">
+                        <div class="service-icon">
+                            <svg width="48" height="48" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M21 12a9 9 0 01-9-9m9 9a9 9 0 019-9m-9 9v6m0-6h.01M3 21h18"/>
+                            </svg>
+                        </div>
+                        <h3 class="service-title">Senior Network Engineer</h3>
+                        <p class="service-description">
+                            Design and manage enterprise network infrastructure. CCNP/CCIE preferred. Experience with data center networking, SD-WAN, and network automation.
+                        </p>
+                        <ul class="service-features">
+                            <li>Remote / Hybrid</li>
+                            <li>Full-Time</li>
+                            <li>Senior Level</li>
+                        </ul>
+                        <a href="company/contact.html" class="btn btn-primary" style="margin-top: 1rem;">Apply Now</a>
+                    </div>
+
+                    <! -- Cloud Solutions Architect -- >
+                    <div class="service-card fade-in-up">
+                        <div class="service-icon">
+                            <svg width="48" height="48" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M3 15a4 4 0 004 4h9a5 5 0 10-5-5v0a4 4 0 01-4-4z"/>
+                            </svg>
+                        </div>
+                        <h3 class="service-title">Cloud Solutions Architect</h3>
+                        <p class="service-description">
+                            Lead cloud migration and hybrid infrastructure projects. AWS/Azure/GCP certifications required. Help enterprise clients modernize their IT.
+                        </p>
+                        <ul class="service-features">
+                            <li>Remote / On-site</li>
+                            <li>Full-Time</li>
+                            <li>Senior Level</li>
+                        </ul>
+                        <a href="company/contact.html" class="btn btn-primary" style="margin-top: 1rem;">Apply Now</a>
+                    </div>
+
+                    <! -- Cybersecurity Engineer -- >
+                    <div class="service-card fade-in-up">
+                        <div class="service-icon">
+                            <svg width="48" height="48" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+                            </svg>
+                        </div>
+                        <h3 class="service-title">Cybersecurity Engineer</h3>
+                        <p class="service-description">
+                            Perform penetration testing, security audits, and incident response. CISSP, CEH, or OSCP preferred. Protect enterprise infrastructure.
+                        </p>
+                        <ul class="service-features">
+                            <li>Remote</li>
+                            <li>Full-Time</li>
+                            <li>Mid to Senior Level</li>
+                        </ul>
+                        <a href="company/contact.html" class="btn btn-primary" style="margin-top: 1rem;">Apply Now</a>
+                    </div>
+
+                    <! -- Data Center Technician -- >
+                    <div class="service-card fade-in-up">
+                        <div class="service-icon">
+                            <svg width="48" height="48" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2"/>
+                            </svg>
+                        </div>
+                        <h3 class="service-title">Data Center Technician</h3>
+                        <p class="service-description">
+                            Hands-on infrastructure work: rack & stack, cabling, Smart Hands support. Fiber optic experience a plus. Travel to client sites.
+                        </p>
+                        <ul class="service-features">
+                            <li>On-site (Multiple Locations)</li>
+                            <li>Full-Time</li>
+                            <li>Entry to Mid Level</li>
+                        </ul>
+                        <a href="company/contact.html" class="btn btn-primary" style="margin-top: 1rem;">Apply Now</a>
+                    </div>
+
+                    <! -- DevOps Engineer -- >
+                    <div class="service-card fade-in-up">
+                        <div class="service-icon">
+                            <svg width="48" height="48" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/>
+                            </svg>
+                        </div>
+                        <h3 class="service-title">DevOps Engineer</h3>
+                        <p class="service-description">
+                            Build CI/CD pipelines, infrastructure as code (Terraform/Ansible), and automated deployment systems. Kubernetes experience required.
+                        </p>
+                        <ul class="service-features">
+                            <li>Remote</li>
+                            <li>Full-Time</li>
+                            <li>Mid to Senior Level</li>
+                        </ul>
+                        <a href="company/contact.html" class="btn btn-primary" style="margin-top: 1rem;">Apply Now</a>
+                    </div>
+
+                    <! -- Service Desk Manager -- >
+                    <div class="service-card fade-in-up">
+                        <div class="service-icon">
+                            <svg width="48" height="48" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"/>
+                            </svg>
+                        </div>
+                        <h3 class="service-title">Service Desk Manager</h3>
+                        <p class="service-description">
+                            Lead our 24/7 service desk operations. ITIL v4 certification required. Manage team, improve processes, ensure SLA compliance.
+                        </p>
+                        <ul class="service-features">
+                            <li>Remote / Hybrid</li>
+                            <li>Full-Time</li>
+                            <li>Management Level</li>
+                        </ul>
+                        <a href="company/contact.html" class="btn btn-primary" style="margin-top: 1rem;">Apply Now</a>
+                    </div>
+
+                </div>
+                -->
+
+                <p style="text-align: center; color: #1a202c; font-size: 18px; margin-top: 2rem;">
+                    We're currently not hiring, but we're always looking for talented professionals. Send us your resume and let's talk about future opportunities.
+                </p>
+            </div>
+        </section>
+
+        <!-- Culture Section -->
+        <section class="value-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Our Culture</h2>
+                    <p class="section-description">
+                        What it's like to work at Sajecy Solutions
+                    </p>
+                </div>
+
+                <div class="value-grid">
+                    <div class="value-column">
+                        <span class="value-badge">Team First</span>
+                        <h2>Collaborative & Supportive</h2>
+                        <p class="value-lead">
+                            We win together. Knowledge sharing, mentorship, and team success over individual glory.
+                        </p>
+                        <ul class="value-list">
+                            <li>
+                                <strong>Mentorship Programs</strong>
+                                <span>Learn from industry experts</span>
+                            </li>
+                            <li>
+                                <strong>Knowledge Sharing</strong>
+                                <span>Weekly tech talks and learning sessions</span>
+                            </li>
+                            <li>
+                                <strong>Cross-Functional Teams</strong>
+                                <span>Collaborate across departments</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="value-column">
+                        <span class="value-badge" style="background: rgba(124, 58, 237, 0.1); color: var(--secondary-purple);">Growth Focused</span>
+                        <h2>Invest in Your Future</h2>
+                        <p class="value-lead">
+                            We invest in your growth because your success is our success.
+                        </p>
+                        <ul class="value-list">
+                            <li>
+                                <strong>Certification Funding</strong>
+                                <span>100% paid for AWS, Azure, Security certs</span>
+                            </li>
+                            <li>
+                                <strong>Conference Attendance</strong>
+                                <span>Annual tech conference budget</span>
+                            </li>
+                            <li>
+                                <strong>Career Pathing</strong>
+                                <span>Clear advancement opportunities</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Final CTA Section -->
+        <section class="cta-section">
+            <div class="cta-content">
+                <h2>Don't See Your Role?</h2>
+                <p>
+                    We're always looking for talented professionals who share our passion for technology excellence. Send us your resume and let's talk about how you can contribute to Sajecy.
+                </p>
+                <div class="cta-buttons">
+                    <a href="company/contact.html" class="btn btn-primary btn-lg">
+                        Submit Your Resume
+                    </a>
+                    <a href="company/about.html" class="btn btn-secondary btn-lg">
+                        Learn About Sajecy
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <div class="nav-logo" style="margin-bottom: 1rem;">
+                        <span class="logo-text">Sajecy</span>
+                        <span class="logo-tagline">Solutions</span>
+                    </div>
+                    <p class="footer-description">
+                        Data Center & Network Infrastructure Specialists delivering complete IT solutions - your trusted technology partner.
+                    </p>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Infrastructure Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="services.html#datacenter">Data Center Services</a></li>
+                        <li><a href="services/network-management.html">Network Management</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4>IT Solutions</h4>
+                    <ul class="footer-links">
+                        <li><a href="services/cloud-hybrid.html">Cloud & Hybrid IT</a></li>
+                        <li><a href="services/cybersecurity.html">Cybersecurity</a></li>
+                        <li><a href="services/ai-automation.html">AI & Automation</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Company</h4>
+                    <ul class="footer-links">
+                        <li><a href="company/about.html">About Sajecy</a></li>
+                        <li><a href="why-sajecy.html">Why Choose Us</a></li>
+                        <li><a href="careers.html">Careers</a></li>
+                        <li><a href="company/contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="footer-legal">
+                    <p>&copy; 2021 Sajecy Solutions. All rights reserved.</p>
+                    <div class="legal-links">
+                        <a href="company/privacy-policy.html">Privacy Policy</a>
+                        <span>|</span>
+                        <a href="company/terms-of-service.html">Terms of Service</a>
+                    </div>
+                </div>
+                <div class="footer-badges">
+                    <span class="badge">ISO 27001</span>
+                    <span class="badge">SOC 2 Type II</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main-interactions.js"></script>
+</body>
+</html>
