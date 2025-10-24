@@ -984,8 +984,18 @@
     position: static;
     transform: none;
     min-width: 100%;
+    margin-top: 0;
+    padding: 0;
+    max-height: 0;
+    overflow: hidden;
+    border: none;
+  }
+
+  .dropdown-menu.active {
+    max-height: 1000px;
     margin-top: 0.5rem;
     padding: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
   }
 
   .dropdown-grid {
