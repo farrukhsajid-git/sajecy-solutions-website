@@ -203,9 +203,7 @@
 
 /* Slide 3: 24/7 Managed IT Services & Network Operations */
 .hero-slide-3::before {
-  background-image: url('../images/it-services-24-7.webp');
-  background-position: center center;
-  background-size: cover;
+  background: linear-gradient(135deg, #0D1B2A 0%, #1E3A8A 100%);
 }
 
 .hero-slide-3::after {
@@ -957,6 +955,7 @@
 /* Mobile Menu Styles */
 @media (max-width: 1023px) {
   .nav-menu {
+    display: flex;
     position: fixed;
     top: 60px;
     left: 0;
