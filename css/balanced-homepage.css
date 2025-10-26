@@ -1046,6 +1046,7 @@
     transition: all 0.3s;
     max-height: calc(100vh - 60px);
     overflow-y: auto;
+    z-index: 9999;
   }
 
   .nav-menu.active {
