@@ -982,7 +982,7 @@
   visibility: hidden;
   transition: all 0.3s;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-  z-index: 1001;
+  z-index: 10000;
 }
 
 .dropdown-menu.active {
