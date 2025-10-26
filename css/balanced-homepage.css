@@ -20,6 +20,7 @@
   backdrop-filter: blur(10px);
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   transition: all 0.3s ease;
+  overflow: visible;
 }
 
 .navbar.scrolled {
@@ -36,6 +37,7 @@
   margin: 0 auto;
   width: 100%;
   box-sizing: border-box;
+  overflow: visible;
 }
 
 .nav-logo a {
@@ -67,6 +69,7 @@
 @media (min-width: 1024px) {
   .nav-menu {
     display: flex;
+    overflow: visible;
   }
 }
 
@@ -950,6 +953,7 @@
 
 .dropdown {
   position: relative;
+  overflow: visible;
 }
 
 .dropdown-toggle {
