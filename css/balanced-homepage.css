@@ -133,6 +133,7 @@
   align-items: center;
   overflow: hidden;
   background: var(--primary-dark);
+  z-index: 1;
 }
 
 .hero-slide {
@@ -150,7 +151,7 @@
 .hero-slide.active {
   opacity: 1;
   visibility: visible;
-  z-index: 2;
+  z-index: 1;
 }
 
 .hero-slide.fade-out {
