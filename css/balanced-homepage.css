@@ -1029,7 +1029,7 @@
 /* Mobile Menu Styles */
 @media (max-width: 1023px) {
   .nav-menu {
-    display: flex !important;
+    display: flex;
     position: fixed;
     top: 60px;
     left: 0;
@@ -1046,7 +1046,6 @@
     transition: all 0.3s;
     max-height: calc(100vh - 60px);
     overflow-y: auto;
-    z-index: 999;
   }
 
   .nav-menu.active {
@@ -1059,6 +1058,7 @@
     position: static;
     transform: none;
     min-width: 100%;
+    max-width: 100%;
     margin-top: 0;
     padding: 0;
     max-height: 0;
@@ -1080,6 +1080,15 @@
 
   body.menu-open {
     overflow: hidden;
+  }
+}
+
+/* Tablet breakpoint - reduce dropdown width */
+@media (max-width: 768px) {
+  .dropdown-menu {
+    min-width: 90vw;
+    left: 5vw;
+    transform: none;
   }
 }
 
