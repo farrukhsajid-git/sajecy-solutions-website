@@ -342,8 +342,7 @@
 
 @media (max-width: 639px) {
   .trust-bar {
-    margin-top: 0 !important;
-    margin-bottom: 2rem;
+    margin-top: 2rem;
   }
 }
 
