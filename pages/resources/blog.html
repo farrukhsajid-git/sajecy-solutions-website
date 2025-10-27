@@ -365,6 +365,45 @@
             flex: 1;
             min-width: 250px;
         }
+
+        /* Mobile Fixes for Text Alignment */
+        @media (max-width: 639px) {
+            .container {
+                padding-left: 1rem;
+                padding-right: 1rem;
+            }
+
+            .blog-card,
+            .featured-post,
+            .blog-card-content,
+            .featured-content {
+                box-sizing: border-box;
+                overflow: hidden;
+            }
+
+            .blog-card-title,
+            .post-title,
+            .blog-card-excerpt,
+            .post-excerpt,
+            .post-meta,
+            .post-author {
+                word-wrap: break-word;
+                overflow-wrap: break-word;
+                word-break: break-word;
+            }
+
+            .featured-post {
+                padding: var(--space-4);
+            }
+
+            .blog-card-content {
+                padding: var(--space-4);
+            }
+
+            .post-meta {
+                flex-wrap: wrap;
+            }
+        }
     </style>
 
     <!-- Logo Integration Styles -->
