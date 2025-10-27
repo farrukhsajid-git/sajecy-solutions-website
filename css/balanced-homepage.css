@@ -139,7 +139,7 @@
 @media (max-width: 639px) {
   .hero-slider {
     padding-bottom: 0 !important;
-    margin-bottom: 0 !important;
+    margin-bottom: -2rem !important;
   }
 }
 
