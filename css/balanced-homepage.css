@@ -138,8 +138,8 @@
 
 @media (max-width: 639px) {
   .hero-slider {
-    padding-bottom: 0 !important;
-    margin-bottom: -2rem !important;
+    padding-bottom: 2rem !important;
+    margin-bottom: 0 !important;
   }
 }
 
@@ -342,7 +342,8 @@
 
 @media (max-width: 639px) {
   .trust-bar {
-    margin-top: 2rem;
+    margin-top: 0;
+    margin-bottom: 2rem;
   }
 }
 
