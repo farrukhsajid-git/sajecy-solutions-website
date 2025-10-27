@@ -134,12 +134,12 @@
   overflow: hidden;
   background: var(--primary-dark);
   z-index: 1;
-  padding-bottom: 0 !important;
 }
 
-@media (min-width: 640px) {
+@media (max-width: 639px) {
   .hero-slider {
-    padding-bottom: 4rem !important;
+    padding-bottom: 0 !important;
+    margin-bottom: 0 !important;
   }
 }
 
@@ -338,13 +338,18 @@
   background: var(--gray-800);
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   padding: 1rem 0;
-  margin-top: 2rem;
+}
+
+@media (max-width: 639px) {
+  .trust-bar {
+    margin-top: 0 !important;
+    margin-bottom: 2rem;
+  }
 }
 
 @media (min-width: 640px) {
   .trust-bar {
     padding: 1.5rem 0;
-    margin-top: 0;
   }
 }
 
