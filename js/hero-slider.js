@@ -14,7 +14,7 @@ class HeroSlider {
 
     // Configuration
     this.config = {
-      autoplayDelay: options.autoplayDelay || 4000, // 4 seconds
+      autoplayDelay: options.autoplayDelay || 6000, // 6 seconds
       transitionDuration: options.transitionDuration || 800, // 800ms
       pauseOnHover: options.pauseOnHover !== false, // Default true
       ...options
@@ -214,7 +214,7 @@ document.addEventListener('DOMContentLoaded', () => {
   if (heroSliderElement) {
     // Create slider instance
     window.heroSlider = new HeroSlider(heroSliderElement, {
-      autoplayDelay: 4000,        // 4 seconds per slide
+      autoplayDelay: 6000,        // 6 seconds per slide
       transitionDuration: 800,     // 800ms transition
       pauseOnHover: true           // Pause when user hovers
     });
