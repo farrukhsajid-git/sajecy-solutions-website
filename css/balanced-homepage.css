@@ -134,6 +134,13 @@
   overflow: hidden;
   background: var(--primary-dark);
   z-index: 1;
+  padding-bottom: 0 !important;
+}
+
+@media (min-width: 640px) {
+  .hero-slider {
+    padding-bottom: 4rem !important;
+  }
 }
 
 .hero-slide {
